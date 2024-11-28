@@ -4,16 +4,15 @@ a.nav-linkcontactos {
     color: black;
     padding: 10px;
     text-align: center;
-    margin-right: 60px;
+    margin-right: 100px;
     text-decoration:none;
 }
 
 .navbar-nav { /*Para alinhar os botões do menu*/
     display: flex;
     align-items: center;
-    margin-left: 60px;
     padding: 10px;
-    
+    color: black;
 }
 
 .navbar-nav a {
@@ -25,3 +24,36 @@ a.nav-linkcontactos {
     margin-left: 60px;
 }
 
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*Estrutura do carousel*/
+.carousel-caption  {
+    top: 60px;
+    text-align: left;
+   
+}   
+
+.carousel-caption h5 {
+    font-size: 30px;
+    color: black;
+    left: 10px;
+    
+}
+
+.textojapao {
+    font-size: 14px;
+    color: black;
+    left: 10px;
+    text-align: left;
+    
+}
+
+/* botão do carousel */
+.maisinfo {
+    padding: 5px 20px;
+    border : 2px solid rgb(5, 143, 207);
+    
+}
