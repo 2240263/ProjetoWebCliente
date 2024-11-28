@@ -1,0 +1,24 @@
+a.nav-linkcontactos {
+    
+    border: 2px solid rgb(5, 143, 207);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    margin-right: 60px;
+    text-decoration:none;
+}
+
+.navbar-nav { /*Para alinhar os botões do menu*/
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    padding: 10px;
+    
+}
+
+.navbar-nav a {
+    color: black;
+    margin-left: 20px;
+}
+
+
