@@ -1,3 +1,4 @@
+/* Menu*/
 a.nav-linkcontactos {
     
     border: 2px solid rgb(5, 143, 207);
@@ -6,6 +7,12 @@ a.nav-linkcontactos {
     text-align: center;
     margin-right: 100px;
     text-decoration:none;
+   
+}
+
+a.nav-linkcontactos:hover {
+    background-color: blue;
+    
 }
 
 .navbar-nav { /*Para alinhar os botões do menu*/
@@ -25,35 +32,70 @@ a.nav-linkcontactos {
 }
 
 section {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /*Estrutura do carousel*/
+
 .carousel-caption  {
     top: 60px;
     text-align: left;
    
 }   
 
-.carousel-caption h5 {
-    font-size: 30px;
-    color: black;
-    left: 10px;
-    
-}
 
-.textojapao {
-    font-size: 14px;
+ /*conteudo japao*/
+.textojapao h5 {
+    font-size: 50px;
     color: black;
+    font-weight: bold;
     left: 10px;
     text-align: left;
     
 }
 
-/* botão do carousel */
-.maisinfo {
+.textojapao p {
+    font-size: 14px;
+    color: black;
+    left: 10px;
+    text-align: left;
+   
+}
+
+/*conteudo australia*/
+
+ .textoaustralia h5 {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    left: 10px;
+    text-align: left;
+    
+}
+
+.textoaustralia p {
+    font-size: 14px;
+    color: white;
+    left: 10px;
+    text-align: left;
+   
+}
+
+
+/* botões do carousel - explorar */
+.botaojapao {
     padding: 5px 20px;
     border : 2px solid rgb(5, 143, 207);
+    
+    
+}
+
+.botaoaustralia {
+    padding: 5px 20px;
+    border : 2px solid rgb(255, 251, 251);
+    background-color: black;
+    color: white;
+       
     
 }
