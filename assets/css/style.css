@@ -120,6 +120,25 @@ section {
     align-items: center;
 }
 
+/*centrar texto dos paises*/
+#escolhepais {
+    text-align: center;
+    font-size: 70px;
+}
+
+#escolhedestino {
+    text-align: center;
+    padding: 20px;
+    margin-left:210px;
+    margin-right:210px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+
+
 
 /* imagem comercial*/
 .card-img
