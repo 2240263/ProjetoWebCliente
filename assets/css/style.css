@@ -115,6 +115,7 @@ section {
 
 /*ATENÇÃO FALTAAAAAAAAAAAAAAAAAAAAAAAA*/
 /*para as setas ficarem ao centro do carousel - falta colocar em branco as sextas na imagem autralia + AS BARRAS*/
+
 .carousel-control-next, .carousel-control-prev{
 
     align-items: center;
@@ -165,4 +166,19 @@ section {
     padding: 15px;
     max-width: 56%;
     margin: 0 auto;
+}
+
+
+/*footer*/
+.footer {
+
+    color: black;
+    padding: 20px;
+    
+}
+
+.logofooter{
+    padding:20px;
+    text-align: center;
+    
 }
