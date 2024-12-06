@@ -187,9 +187,48 @@ section {
     
 }
 
+/*sobre nós*/
+.sobrenos {
+    text-align: center;
+    padding: 15px;
+    font-size: 45px;
+    color:black;
+    font-weight: bold;
+}
 
+.conteudo h1{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 0px;
+}
 
+.conteudo p{
+    font-size: 16px;
+    color: rgb(97, 95, 95);
+    text-align: center;
+    padding: 0px;
+}
 
+#elisa, #joana #ines{
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 0px;
+
+}
+
+#sobreequipa{
+    padding: 5px;
+    background-color: #fffdfd;
+    color: rgb(5, 143, 207);
+    border: 1px solid rgb(5, 143, 207);
+
+}
+.botaoequipa{
+    text-align: center;
+}
 
 
 
