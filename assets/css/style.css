@@ -168,9 +168,24 @@ section {
     margin: 0 auto;
 }
 
+.botaocomercial{
+    text-align: center;
+    margin:10px;
+}
 
+#comercialbotao{
+    border : 2px solid rgb(13, 13, 14);
+    background-color: white;
+    color: black;
+    padding: 7px 30px;
+}
 
-
+#comercialbotao:hover{
+    border : 1px solid white;
+    background-color:transparent;
+    color: white;
+    
+}
 
 
 
@@ -210,4 +225,5 @@ section {
 .iconsredes {
     margin: 10px;
 }
+
 
