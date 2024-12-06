@@ -6,7 +6,7 @@ a.nav-linkcontactos {
     padding: 10px;
     text-align: center;
     margin-right: 100px;
-    text-decoration:none;
+    text-decoration:none; /*tirar sublinhado do link*/
    
 }
 /*para ficar o botao azul quando passar o mouse*/
@@ -20,11 +20,11 @@ a.nav-linkcontactos:hover {
     align-items: center;
     padding: 10px;
     color: black;
+    
 }
 
 .navbar-nav a {
-   /* color: black;
-    margin-left: 20px;*/
+    margin-left: 20px; /*espaço entre os botões do menu*/
 }
 
 #logo{
@@ -169,16 +169,45 @@ section {
 }
 
 
+
+
+
+
+
+
+
+
+
 /*footer*/
 .footer {
 
     color: black;
     padding: 20px;
+    background-color: #e7e3e3;
+  
     
 }
 
 .logofooter{
-    padding:20px;
-    text-align: center;
-    
+    padding: 10px;
 }
+
+
+
+.setoresfooter a {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+   
+}
+
+.redessociais {
+    padding-top: 15px;
+
+}
+
+
+.iconsredes {
+    margin: 10px;
+}
+
