@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header> <!--menu -->
+  <header class="container"> <!--menu -->
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
         <img src="assets/img/logoipl.png" id="logo" alt="Logo" width="200">
@@ -34,7 +34,6 @@
   </header>
 
     <!-- Carrousel -->
-
 
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
       <div class="carousel-indicators">
@@ -116,17 +115,16 @@
 
     <br>
 
-    <!-- cards equipa -->
+    <!-- cards paises -->
 
-    <section class="pagprincipalbandeiras">
-      <div class="container">
+    <section class="container">
+      <div class="pagpaises">
         <div class="col col-md-12">    <!--adicionei aqui colunas,não sei se está correto.....................................................-->
           <h1 id="escolhepais">Escolha o País</h1>
         </div>
         <div calss="col-md-12">
           <p id="escolhedestino">Escolha um destino para explorar a sua singularidade, cultura e atrações. Descubra os
-            lugares
-            mais cativantes do mundo, cada um oferecendo experiências inesquecíveis.</p>
+            lugares mais cativantes do mundo, cada um oferecendo experiências inesquecíveis.</p>
         </div>
         <div class="row"id="cardpaises">
           <div class="col-md-4">
@@ -179,12 +177,12 @@
       </div>
     </section>
 
-    <section>
+   <!--<section>
     <div class="sobrenos"> Sobre Nós</div>
       <div class="fotografias">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card" ><!--  mudar o tamnho consoante a imagem -->
+            <div class="card" >
               <div id="elisa">
               <img src="assets/img/elisa.png" class="card-img-top" alt="elisa" >
               </div>
@@ -213,7 +211,7 @@
           </div>
           <div class="col">
             <div class="card" > 
-              <div id="Inês">
+              <div id="ines">
               <img src="assets/img/pessoa.png" class="card-img-top" alt="ines"> 
               </div>
               <div class="conteudo">
@@ -228,11 +226,61 @@
         </div>
       </div>
     
-    </section>
+    </section> -->
 
+    <section>
+      <div class="sobrenos text-center py-4">Sobre Nós</div>
+      <div class="fotografias container">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+              <!-- Coluna 1 -->
+              <div class="col">
+                  <div class="card h-100">
+                      <!-- Imagem responsiva -->
+                      <div id="elisa"><img src="assets/img/elisa.png" class="card-img-top img-fluid" alt="elisa"></div>
+                      <div class="conteudo text-center p-3">
+                          <h1 class="fs-5">Elisa Eusébio</h1>
+                          <p class="text-muted">Estudante</p>
+                      </div>
+                      <div class="botaoequipa text-center pb-3">
+                          <button type="button" class="sobreequipa btn btn-primary" >Mais informações ></button>
+                      </div>
+                  </div>
+              </div>
+              <!-- Coluna 2 -->
+              <div class="col">
+                  <div class="card h-100">
+                      <!-- Imagem responsiva -->
+                      <div id="joana"><img src="assets/img/pessoa.png" class="card-img-top img-fluid" alt="joana"></div>
+                      <div class="conteudo text-center p-3">
+                          <h1 class="fs-5">Joana Santos</h1>
+                          <p class="text-muted">Estudante</p>
+                      </div>
+                      <div class="botaoequipa text-center pb-3">
+                          <button type="button" class="sobreequipa btn btn-primary">Mais informações ></button>
+                      </div>
+                  </div>
+              </div>
+              <!-- Coluna 3 -->
+              <div class="col">
+                  <div class="card h-100">
+                      <!-- Imagem responsiva -->
+                      <div id="ines"><img src="assets/img/pessoa.png" class="card-img-top img-fluid" alt="ines"></div>
+                      <div class="conteudo text-center p-3">
+                          <h1 class="fs-5">Inês Sousa</h1>
+                          <p class="text-muted">Estudante</p>
+                      </div>
+                      <div class="botaoequipa text-center pb-3">
+                          <button type="button" class="sobreequipa btn btn-primary" >Mais informações ></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
  
 
-    </section>
+    
 
 
 

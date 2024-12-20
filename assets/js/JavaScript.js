@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 // Função para buscar países
 function fetchPaises(inputValue) {
-    const api_url = "https://restcountries.herokuapp.com/api/v1" + inputValue;
+    const api_url = "https://restcountries.com/v3.1/name/" + inputValue;
 
     $.ajax({
         url: api_url,
@@ -36,7 +36,7 @@ function displayPaises(arrayPaises) {
                     <h5 class="card-title"></h5>
                     <p class="card-text">Capital:</p>
                     <p class="card-text">Região: </p>
-                    <a href="https://restcountries.herokuapp.com/api/v1" target="_blank" class="btn btn-primary d-block mt-4">Mais informações</a>
+                    <a href="https://restcountries.com/v3.1/name/{name}" target="_blank" class="btn btn-primary d-block mt-4">Mais informações</a>
                 </div>
             </div>
         </div>`;
