@@ -406,11 +406,7 @@ section {
     margin: 10px;
 }
 
-/* Troca as imagens ao passar o rato */
-.linkedin:hover {
-    content: url('../img/Redessociais/Acess/link.svg');
-    /* Caminho para a imagem de hover */
-}
+
 /*pagina contactos*/
 /* Ajuste das imagens dos card */
 #contactoselisa img,#contactosjoana img,#contactosines img {
@@ -442,12 +438,24 @@ section {
     padding: 15px; 
 }
 
+/* Troca as imagens ao passar o rato */
 .x:hover {
     content: url('../img/Redessociais/Acess/tw.svg');
-    /* Caminho para a imagem de hover */
 }
 
+/* Troca as imagens ao passar o rato */
+.linkedin:hover {
+    content: url('../img/Redessociais/Acess/link.svg');
+}
 
+.facebook:hover {
+    content: url('../img/Redessociais/Acess/face.svg');
+}
+
+/* Troca as imagens ao passar o rato */
+.instagram:hover {
+    content: url('../img/Redessociais/Acess/inst.svg');
+}
 
 /*----------------------------------------------------FIM DA HOMEPAGE----------------------------------------------------*/
 
