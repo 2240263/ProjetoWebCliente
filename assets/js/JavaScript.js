@@ -1,3 +1,5 @@
+
+//---------------------------------------------------Página dos paises-------------------------------------------------------------------------------------------
 $(document).ready(function() {
     $("#pesquisarbotao").on("click", function() {
         var inputValue = $("#pesquisartext").val();
@@ -36,6 +38,8 @@ function displayPaises(arrayPaises) {
                     <h5 class="card-title"></h5>
                     <p class="card-text">Capital:</p>
                     <p class="card-text">Região: </p>
+                    <p class="card-text">População: </p>
+
                     <a href="https://restcountries.com/v3.1/name/{name}" target="_blank" class="btn btn-primary d-block mt-4">Mais informações</a>
                 </div>
             </div>
@@ -45,3 +49,5 @@ function displayPaises(arrayPaises) {
     });
 }
 
+
+//-------------------------------------------------------------Página favoritos-------------------------------------------------------------------------------------
