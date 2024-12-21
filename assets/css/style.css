@@ -418,17 +418,21 @@ section {
     align-items: center;
     max-width: 100%;
     height: auto;
-    width: 75%; /* Ajustando largura para reduzir o espaço entre a imagem e o card*/
+    width: 75%; /* Ajuste da largura para reduzir o espaço entre a imagem e o card*/
     margin: 0 auto;
     display: block;
 }
+.textoquipa{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
 
-
-
-
-/* Conteúdo do cartão */
+/*Ajuste dos cards */
 .conteudocontactos {
-    padding: 15px; /* Ajustando o espaçamento interno do conteúdo */
+    padding: 15px; 
 }
 
 
