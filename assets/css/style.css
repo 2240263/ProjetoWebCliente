@@ -1,47 +1,94 @@
-@media only screen and (max-width: 575px) {
-  
-    .card-title {
-        font-size: 25px;
+@media only screen and (max-width: 768px) {
+
+    #logo {
+        width: 150px;
+        max-width: 100%;
     }
-    .card-img {
-        height: auto;
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        margin-left: 15px;
+        /*espaço entre os botões do menu*/
     }
-    .textocomercial{
-        font-size: 2px;
+
+    .navbar-nav .nav-linkcontactos {
+        align-items: center;
     }
+
+    /*cards paises*/
+    #escolhedestino {
+        font-size: 12px;
+        margin: 10px;
+        width: 100%;
+    }
+    #cardpaises {
+       margin: 25px;
+    }
+
+    /*comercial ajustes*/
+    .card .card-titlec {
+        font-size: 18px;
+        margin-top: 7px;
+    }
+
+    .card .card-img {
+        width: 100%;
+        height: 210px;
+    }
+
+    .card .textocomercial {
+        font-size: 10px;
+        max-width: 100%;
+        margin-top: 0px;
+        padding: 5px;
+    }
+
+    .card .botaocomercial {
+        margin: 5px;
+    }
+
+    .footer {
+
+        font-size: 15px;
+    }
+
+
 }
 
 
 /* Menu*/
 a.nav-linkcontactos {
-    
+
     border: 2px solid rgb(5, 143, 207);
     color: black;
     padding: 10px;
     text-align: center;
-    margin-right: 100px;
-    text-decoration:none; /*tirar sublinhado do link*/
-   
+    text-decoration: none;
+    /*tirar sublinhado do link*/
+
 }
+
 /*para ficar o botao azul quando passar o mouse*/
 a.nav-linkcontactos:hover {
     background-color: rgb(5, 143, 207);
-    
+
 }
 
-.navbar-nav { /*Para alinhar os botões do menu*/
-    display: flex;
+.navbar-nav {
+    /*Para alinhar os botões do menu*/
+
     align-items: center;
     padding: 10px;
     color: black;
-    
+
 }
 
 .navbar-nav a {
-    margin-left: 20px; /*espaço entre os botões do menu*/
+    margin-left: 20px;
+    /*espaço entre os botões do menu*/
 }
 
-#logo{
+#logo {
     margin-left: 40px;
 }
 
@@ -49,87 +96,100 @@ section {
     margin-bottom: 40px;
 }
 
+.navbar-nav .home:hover {
+    /*para o home ficar azul quando passar o mouse*/
+    color: rgb(5, 143, 207);
+}
+
+
 /*Estrutura do carousel*/
 
-.carousel-caption  {
+.carousel-caption {
     top: 60px;
     text-align: left;
-}   
+}
 
- /*conteudo japao e Paris*/
-.textojapao h5, .textoparis h5 {
+/*conteudo japao e Paris*/
+.textojapao h5,
+.textoparis h5 {
     font-size: 50px;
     color: black;
     font-weight: bold;
     left: 10px;
-    text-align: left;
-    
+
+
 }
 
-.textojapao p,  .textoparis p{
+.textojapao p,
+.textoparis p {
     font-size: 16px;
     color: black;
     left: 10px;
-    text-align: left;
-   
+    margin-top: 20px;
+
+
 }
 
 /*conteudo australia */
 
- .textoaustralia h5 {
+.textoaustralia h5 {
     font-size: 50px;
     color: white;
     font-weight: bold;
     left: 10px;
-    text-align: left;
-    
+
+
 }
 
 .textoaustralia p {
     font-size: 16px;
     color: white;
     left: 10px;
-    text-align: left;
-   
+    margin-top: 20px;
+
 }
 
 
 /* botões do carousel - explorar */
-.botaojapao, .botaoparis {
+.botaojapao,
+.botaoparis {
     padding: 5px 20px;
-    border : 2px solid rgb(5, 143, 207);
+    border: 2px solid rgb(5, 143, 207);
     float: left;
     background-color: transparent;
-    
+
 }
 
-.botaojapao:hover, .botaoparis:hover {
+.botaojapao:hover,
+.botaoparis:hover {
     padding: 5px 20px;
-    border : 2px solid rgb(5, 143, 207);
+    border: 2px solid rgb(5, 143, 207);
     background-color: rgb(5, 143, 207);
     float: left;
-    
+
 }
-.botaoaustralia{
+
+.botaoaustralia {
     padding: 5px 20px;
-    border : 2px solid rgb(255, 251, 251);
+    border: 2px solid rgb(255, 251, 251);
     background-color: black;
     color: white;
-    float:left;
+    float: left;
     border: black;
-       
+
 }
 
-.botaoaustralia:hover{
+.botaoaustralia:hover {
     padding: 5px 20px;
-    border : 2px solid rgb(255, 251, 251);
+    border: 2px solid rgb(255, 251, 251);
     background-color: rgb(252, 248, 248);
     color: rgb(22, 1, 1);
-    float:left;
+    float: left;
 }
 
 
-.carousel-control-next, .carousel-control-prev{
+.carousel-control-next,
+.carousel-control-prev {
 
     align-items: center;
 }
@@ -144,35 +204,44 @@ section {
 #escolhedestino {
     text-align: center;
     padding: 10px;
-    margin-left:300px;
-    margin-right:300px;
+    width: 100%;
     margin-bottom: 40px;
-    
 }
 
+
+/* CARDS*/
 #cardpaises {
     margin-right: 90px;
     margin-left: 90px;
 }
-#pais1 h4{
-    font-size: 40px;
+
+.card:hover {
+    border: 2px solid rgb(5, 143, 207);
 }
-.card-title {   
+
+
+
+.card .card-title {
+    font-size: 20px;
+    color: black;
     text-align: center;
-   
+    margin-top: 20px;
 }
 
-
+.card img.bandeira {
+    /*definição da imagem da bandeira*/
+    width: 100%;
+    height: 200px;
+}
 
 /* imagem comercial*/
-.card-img
-{
+.card-img {
     width: 100%;
-    height: 500px;      
+    height: 500px;
 }
 
 
-.card-title {
+.card-titlec {
     font-size: 45px;
     color: white;
     font-weight: bold;
@@ -190,23 +259,23 @@ section {
     margin: 0 auto;
 }
 
-.botaocomercial{
+.botaocomercial {
     text-align: center;
-    margin:10px;
+    margin: 10px;
 }
 
-#comercialbotao{
-    border : 2px solid rgb(13, 13, 14);
+#comercialbotao {
+    border: 2px solid rgb(13, 13, 14);
     background-color: white;
     color: black;
     padding: 7px 30px;
 }
 
-#comercialbotao:hover{
-    border : 1px solid white;
-    background-color:transparent;
+#comercialbotao:hover {
+    border: 1px solid white;
+    background-color: transparent;
     color: white;
-    
+
 }
 
 /*sobre nós*/
@@ -214,81 +283,98 @@ section {
     text-align: center;
     padding: 30px;
     font-size: 55px;
-    color:black;
+    color: black;
     font-weight: bold;
 }
 
-.conteudo h1{
+.conteudo h1 {
     font-size: 30px;
     color: black;
     font-weight: bold;
     text-align: center;
-    
+
 }
 
-.conteudo p{
+.conteudo p {
     font-size: 16px;
     color: rgb(97, 95, 95);
     text-align: center;
     padding: 0px;
-    
+
 }
 
-.fotografias{
+.fotografias {
     align-items: center;
     max-width: 100%; /* Garante que a imagem não ultrapasse o container */
     height: auto;    /* Mantém a proporção original */
-    width: 80%;      /* Ajusta o tamanho relativo ao container */
+    width: 80%;      /* Ajusta o tamanho relativo ao contêiner */
     margin: 0 auto;  /* Centraliza a imagem */
+    display: block;
+    /* para a imagem ficar no centro*/
+
+}
+
+#elisa img {
+
+    width: 280px;
+    height: 280px;
+    border-radius: 0px;
+    /* remove o arredondamento dos cantos da fotografia*/
+    margin: 25px auto;
+    display: block;
+
+}
+
+#joana img {
+    width: 280px;
+    height: 280px;
+    margin: 25px auto;
+    border-radius: 0px;
+    /* remove o arredondamento dos cantos da fotografia*/
     display: block;
 }
 
-#elisa img{
-
+#ines img {
     width: 280px;
-    height: 280px;   
+    height: 280px;
+    margin: 25px auto;
     border-radius: 0px;
-    margin: 35px auto;
-    display: block; 
-   
+    /* remove o arredondamento dos cantos da fotografia*/
+    display: block;
 }
 
-#joana img{
-    width: 280px;
-    height: 280px;   
-    border-radius: 0px;
-    margin: 35px auto;
-    display: block; 
-}
-
-#ines img{
-    width: 280px;
-    height: 280px;   
-    border-radius: 0px;
-    margin: 35px auto;
-    display: block; 
-}
-
-.sobreequipa{
+.sobreequipa {
     padding: 5px;
     background-color: #fffdfd;
     color: rgb(5, 143, 207);
     border: 1px solid rgb(5, 143, 207);
 }
 
-.botaoequipa{
+.botaoequipa {
     text-align: center;
     margin-bottom: 30px;
 }
-.sobreequipa:hover{
+
+.sobreequipa:hover {
     background-color: rgb(5, 143, 207);
     color: white;
 }
 
+.card {
+    border-radius: 0px;
+    /* remove o arredondamento dos cantos*/
+}
 
-.card:hover { 
+
+.shadow-card:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+.shadow-card:hover .sobreequipa {
+    background-color: rgb(5, 143, 207);
+    color: white;
+}
+
 
 
 /*footer*/
@@ -296,17 +382,17 @@ section {
 
     color: black;
     padding: 20px;
-    background-color: #e7e3e3;    
+    background-color: #e7e3e3;
 }
 
-.logofooter{
+.logofooter {
     padding: 10px;
 }
 
 .setoresfooter a {
     text-decoration: none;
     color: black;
-    margin: 20px; 
+    margin: 20px;
 }
 
 .redessociais {
@@ -318,39 +404,7 @@ section {
     margin: 10px;
 }
 
-/* Página Contactos*/
-.textoquipa {
-    text-align: center;
-    margin-bottom: 50px;
-}
-/* Ajustar imagens dos cards */
-#contactoselisa img, #contactosjoana img, #contactosines img {
-    width: 240px; 
-    height: 240px; 
-    border-radius: 0; 
-    margin: 20px auto; /* Ajustar o espaçamento */
-    display: block;
-}
-.fotografiascontactos {
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-    width: 75%; /* Ajustar a largura para reduzir o espaço entre cards*/
-    margin: 0 auto;
-    display: block; 
-}
-
-/* Ajuste geral dos cartões */
-.card {
-    max-height: 400px; /* altura máxima do card*/
-    padding: 10px; /* Reduzir o preenchimento interno entre a imagem e o card */
-    border: 1px solid #ddd; 
-    border-radius: 0; /* Cantos quadrados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 
-/* Conteúdo do cartão */
-.conteudocontactos {
-    padding: 15px; /* Ajustando o espaçamento interno do conteúdo */
-}
+
+  
