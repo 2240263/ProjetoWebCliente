@@ -21,8 +21,9 @@
         margin: 10px;
         width: 100%;
     }
+
     #cardpaises {
-       margin: 25px;
+        margin: 25px;
     }
 
     /*comercial ajustes*/
@@ -408,10 +409,6 @@ section {
     margin: 10px;
 }
 
-
-
-
-
 /* Troca as imagens ao passar o rato */
 .linkedin:hover {
     content: url('../img/Redessociais/Acess/link.svg');
@@ -432,3 +429,29 @@ section {
     content: url('../img/Redessociais/Acess/tw.svg');
     /* Caminho para a imagem de hover */
 }
+
+
+
+/*----------------------------------------------------FIM DA HOMEPAGE----------------------------------------------------*/
+
+
+
+/*----------------------------------------------------PÁGINA PAÍSES----------------------------------------------------*/
+
+
+.apresentacao h2 {
+    font-size: 35px;
+    color: rgb(5, 143, 207);
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.apresentacao p {
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    padding: 5px;
+    max-width: ;
+}
+
