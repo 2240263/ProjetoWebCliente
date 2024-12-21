@@ -1,0 +1,31 @@
+
+/*pagina contactos*/
+/* Ajuste das imagens dos card */
+#contactoselisa img,#contactosjoana img,#contactosines img {
+    width: 240px; 
+    height: 240px; 
+    border-radius: 0; /*cantos quadrados */
+    margin: 20px auto; /* Ajustar o espaçamento */
+    display: block;
+}
+
+.fotografiascontactos {
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    width: 75%; /* Ajuste da largura para reduzir o espaço entre a imagem e o card*/
+    margin: 0 auto;
+    display: block;
+}
+.textoquipa{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/*Ajuste dos cards */
+.conteudocontactos {
+    padding: 15px; 
+}

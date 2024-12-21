@@ -111,8 +111,7 @@ section {
 }
 
 /*conteudo japao e Paris*/
-.textojapao h5,
-.textoparis h5 {
+.textojapao h5, .textoparis h5 {
     font-size: 50px;
     color: black;
     font-weight: bold;
@@ -407,37 +406,6 @@ section {
 }
 
 
-/*pagina contactos*/
-/* Ajuste das imagens dos card */
-#contactoselisa img,#contactosjoana img,#contactosines img {
-    width: 240px; 
-    height: 240px; 
-    border-radius: 0; /*cantos quadrados */
-    margin: 20px auto; /* Ajustar o espaçamento */
-    display: block;
-}
-
-.fotografiascontactos {
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-    width: 75%; /* Ajuste da largura para reduzir o espaço entre a imagem e o card*/
-    margin: 0 auto;
-    display: block;
-}
-.textoquipa{
-    font-size: 15px;
-    color: black;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
-/*Ajuste dos cards */
-.conteudocontactos {
-    padding: 15px; 
-}
-
 /* Troca as imagens ao passar o rato */
 .x:hover {
     content: url('../img/Redessociais/Acess/tw.svg');
@@ -461,41 +429,3 @@ section {
 
 
 
-/*----------------------------------------------------PÁGINA PAÍSES----------------------------------------------------*/
-
-
-
-
-
-/* imagem apresentacao*/
-.imgapresentacao {
-    width: 50%;                
-    height: 10px; 
-}
-
-.apresentacao {
-    text-align: center;         /* Centraliza o texto dentro da div */
-    color: white;               /* Cor do texto branca para contraste */
-    padding: 20px;              /* Espaçamento interno */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo translúcido para destacar o texto sobre a imagem */
-  }
-
-
-.apresentacao h2 {
-    font-size: 35px;
-    color: rgb(1, 9, 14);
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.apresentacao p {
-    font-size: 16px;
-    color: rgb(8, 8, 8);
-    text-align: center;
-    padding: 5px;
-    max-width: ;
-}
-
-
-  

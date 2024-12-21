@@ -1,0 +1,37 @@
+
+/*----------------------------------------------------PÁGINA PAÍSES----------------------------------------------------*/
+
+
+
+/* imagem apresentacao*/
+.imgapresentacao {
+    width: 50%;                
+    height: 10px; 
+}
+
+.apresentacao {
+    text-align: center;         /* Centraliza o texto dentro da div */
+    color: white;               /* Cor do texto branca para contraste */
+    padding: 20px;              /* Espaçamento interno */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo translúcido para destacar o texto sobre a imagem */
+  }
+
+
+.apresentacao h2 {
+    font-size: 35px;
+    color: rgb(1, 9, 14);
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.apresentacao p {
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    padding: 5px;
+    max-width: ;
+}
+
+
+  
