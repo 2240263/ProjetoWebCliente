@@ -374,7 +374,7 @@ section {
     background-color: rgb(5, 143, 207);
     color: white;
 }
-
+ 
 
 
 /*footer*/
@@ -403,6 +403,34 @@ section {
 .iconsredes {
     margin: 10px;
 }
+
+/*pagina contactos*/
+/* Ajuste das imagens dos card */
+#contactoselisa img,#contactosjoana img,#contactosines img {
+    width: 240px; 
+    height: 240px; 
+    border-radius: 0; /*cantos quadrados */
+    margin: 20px auto; /* Ajustar o espaçamento */
+    display: block;
+}
+
+.fotografiascontactos {
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    width: 75%; /* Ajustando largura para reduzir o espaço entre a imagem e o card*/
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+/* Conteúdo do cartão */
+.conteudocontactos {
+    padding: 15px; /* Ajustando o espaçamento interno do conteúdo */
+}
+
 
 
 
