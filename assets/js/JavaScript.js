@@ -8,9 +8,9 @@ $(document).ready(function () {
       $.ajax({
         method: 'GET',
         url: 'https://restcountries.com/v3.1/all', // API para obter os países
-        success: function (dados) {
+        success: function (inf) {
           // Embaralha o array de países e seleciona 3 países aleatórios
-          var paisesAleatorios = shuffleArray(dados).slice(0, 3);
+          var paisesAleatorios = shuffleArray(inf).slice(0, 3);
   
           // Preenche os dados dos três primeiros países nos cards existentes
           $('#f1').attr('src', paisesAleatorios[0].flags.png); // Bandeira do Card 1

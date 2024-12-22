@@ -10,7 +10,7 @@
 
 <body>
   <!--menu -->
-  <header class="container">
+  <header class="container"> <!--menu -->
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
         <img src="assets/img/logoipl.png" id="logo" alt="Logo" width="200">
@@ -21,79 +21,42 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link active" href="#">Países</a>
-          <a class="nav-link active" href="#">Loja</a>
+          <a class="nav-link active home" href="index.html">Home</a>
+          <a class="nav-link active" href="paginapaises.html" target="_blank">Países</a>
+          <a class="nav-link active" href="">Loja</a>
           <a class="nav-link active" href="#">Sobre</a>
-          <a class="nav-linkcontactos" href="#">Contactos</a>
+          <a class="nav-linkcontactos" href="contactos.html">Contactos</a>
         </div>
       </div>
       </div>
     </nav>
   </header>
 
-
-
-  <!-- card paises-->
-
   <section class="container py-5">
     <div class="pagpaises">
       <div class="row text-center">
         <div class="col-12">
           <h2 id="escolhepais" class="display-4 text-primary mb-4">Escolha o País</h2>
-          <p id="escolhedestino" class="lead mb-5">Descubra a singularidade, a cultura e atrações de cada país. Explore!</p>
+          <p id="escolhedestino" class="lead mb-5">Descubra a singularidade, a cultura e atrações de cada país. Explore!
+          </p>
         </div>
       </div>
 
-      <!-- Filtro de Pesquisa -->
-      
-        <div class="input-group mb-3">
-          <input type="text" id="pesquisartext" class="form-control" placeholder="Escreve o nome de um país">
-          <button type="button" id="pesquisarbotao" class="btn btn-primary">Pesquisar</button>
-        </div>
-        <div class="row" id="listapaises"></div>
+      <!-- Filtro de texto -->
+      <div class="input-group mb-3">
+        <input type="text" id="pesquisartext" class="form-control" placeholder="Pesquisa por um país">
+        <button type="button" id="pesquisarbotao" class="btn btn-primary">Pesquisar</button>
       </div>
 
       <!-- Cards de Países -->
-      <div class="row" id="cardpaises">
-        <!-- Os cards serão gerados dinamicamente via JavaScript -->
+      <div id="cardpaises" class="row">
+        <!-- Os cards serão gerados automaticamente -->
       </div>
     </div>
   </section>
 
-  <!-- Modal para Favoritos -->
-  <div class="modal fade" id="modalFavoritos" tabindex="-1" aria-labelledby="modalFavoritosLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalFavoritosLabel">Países Favoritos</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body" id="lista-favoritos">
-          <!-- Países favoritos serão exibidos aqui -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="card">
-      <img src="${pais.flags.png}" class="card-img-top" alt="Bandeira de ${pais.name.common}">
-      <div class="card-body">
-        <h5 class="card-title">${pais.name.common}</h5>
-        <button class="btn btn-outline-danger" data-pais="${pais.name.common}"
-          onclick="adicionarFavoritos('${pais.name.common}', '${pais.flags.png}')">
-          <i class="fas fa-heart"></i>
-        </button>
-      </div>
-    </div>
-  </div>
 
 
-
-
-
-  
 
 
 
@@ -133,13 +96,16 @@
             <ul class="list-unstyled d-flex"> <!--tirar os pontos da lista -->
               <li class="mx-auto" style="width: 100%">
                 <a href="https://www.linkedin.com/" target="_blank">
-                  <img src="assets/img/Redessociais/Linkedin.svg" alt="LinkedIn" width="30" class="iconsredes"></a>
+                  <img src="assets/img/Redessociais/Linkedin.svg" alt="LinkedIn" width="30"
+                    class="iconsredes linkedin"></a>
                 <a href="https://www.facebook.com" target="_blank"></a>
-                <img src="assets/img/Redessociais/facebook.svg" alt="Facebook" width="30" class="iconsredes"></a>
+                <img src="assets/img/Redessociais/facebook.svg" alt="Facebook" width="30"
+                  class="iconsredes facebook"></a>
                 <a href="https://www.instagram.com" target="_blank">
-                  <img src="assets/img/Redessociais/instagram.svg" alt="Facebook" width="30" class="iconsredes"></a>
+                  <img src="assets/img/Redessociais/instagram.svg" alt="Facebook" width="30"
+                    class="iconsredes instagram"></a>
                 <a href="https://x.com" target="_blank">
-                  <img src="assets/img/Redessociais/Twitter.svg" alt="Facebook" width="30" class="iconsredes"></a>
+                  <img src="assets/img/Redessociais/Twitter.svg" alt="Facebook" width="30" class="iconsredes x"></a>
               </li>
             </ul>
           </div>
