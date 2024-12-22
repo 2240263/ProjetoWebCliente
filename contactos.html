@@ -21,9 +21,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active home" href="#">Home</a>
-          <a class="nav-link active" href="paginapaises.html" target="_blank">Países</a>
-          <a class="nav-link active" href="">Loja</a>
+          <a class="nav-link active home" href="index.html">Home</a>
+          <a class="nav-link active" href="paginapaises.html">Países</a>
+          <a class="nav-link active" href="#">Loja</a>
           <a class="nav-link active" href="contactos.html">Sobre</a>
           <a class="nav-linkcontactos" href="contactos.html">Contactos</a>
         </div>
@@ -34,7 +34,11 @@
   <section>
     <div class="sobrenos text-center">Sobre Nós</div>
     <div>
-      <p class="textoquipa"> Escrever um texto sobre a equipa</p>
+      <p class="textoquipa"> A nossa equipa, composta por três elementos é formada por alunas do Instituto Politécnico
+        de Leiria, no curso de Programação e Sistemas de Informação. Estamos atualmente a desenvolver um projeto no
+        âmbito da disciplina de Programação para a Web, onde aplicamos os conhecimentos adquiridos para criar soluções
+        inovadoras e funcionais. Este trabalho em equipa permite-nos explorar tecnologias modernas e fortalecer as
+        nossas competências na área, preparando-nos para os desafios do mercado de trabalho na área da programação.</p>
     </div>
     <div class="fotografiascontactos container">
       <div class="row row-col-1 row-col-md-3 g-4">
@@ -89,7 +93,7 @@
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-4">
           <p>
             <label for="inputnome" class="form-label" id="inputnumber">Contacto</label>
             <input type="number" class="form-control" placeholder="+351" aria-label="Contacto">
@@ -103,18 +107,27 @@
       <div class="col-md-6">
         <textarea class="form-control" placeholder="Escreva o seu comentário ou questão..."
           id="floatingTextarea2"></textarea>
-      </div>
-
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Desejo receber informações sobre a nossa empresa
-          </label>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Desejo receber informações sobre a nossa empresa
+            </label>
+          </div>
+        </div>
+        <div class="col-12 mb-4 text-center">
+          <button type="submit" class=" btn btn-primary" id="enviar">Enviar</button>
         </div>
       </div>
-      <div class="col-12 mb-4">
-        <button type="submit" class="botaocontacto btn btn-primary">Enviar</button>
+      
+      <div class="infempresa">
+        <h5>Informações de Contato</h5>
+        <address>
+          <div>Rua General Norton de Matos</div>
+          <div>Apartado 4133,</div>
+          <p>2411-901 Leiria – Portugal</p>
+          <a href="tel:+000000000000">+000 000 000 000</a>
+        </address>
       </div>
     </div>
   </form>
@@ -123,13 +136,6 @@
   <!-- Rodapé -->
   <footer>
     <div class="footer">
-      <h5>Informações de Contato</h5>
-      <address>
-        <div>Rua General Norton de Matos</div>
-        <div>Apartado 4133,</div>
-        <p>2411-901 Leiria – Portugal</p>
-        <a href="tel:+000000000000">+000 000 000 000</a>
-      </address>
       <div class="row">
         <div class="col-md-12 mix-auto text-center">
           <img src="assets/img/logoipl.png" alt="logo" width="200" class="logofooter">
