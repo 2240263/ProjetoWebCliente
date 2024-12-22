@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/stylecontactos.css">
 </head>
 
 <body>
@@ -21,28 +21,30 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link active" href="#">Países</a>
+          <a class="nav-link active home" href="index.html">Home</a>
+          <a class="nav-link active" href="paginapaises.html">Países</a>
           <a class="nav-link active" href="#">Loja</a>
-          <a class="nav-link active" href="#">Sobre</a>
-          <a class="nav-linkcontactos" href="#">Contactos</a>
+          <a class="nav-link active" href="contactos.html">Sobre</a>
+          <a class="nav-linkcontactos" href="contactos.html">Contactos</a>
         </div>
-      </div>
       </div>
     </nav>
   </header>
-
   <!--Informações da equipa-->
   <section>
     <div class="sobrenos text-center">Sobre Nós</div>
     <div>
-      <p class="textoquipa"> Escrever um texto sobre a equipa</p>
+      <p class="textoquipa"> A nossa equipa, composta por três elementos é formada por alunas do Instituto Politécnico
+        de Leiria, no curso de Programação e Sistemas de Informação. Estamos atualmente a desenvolver um projeto no
+        âmbito da disciplina de Programação para a Web, onde aplicamos os conhecimentos adquiridos para criar soluções
+        inovadoras e funcionais. Este trabalho em equipa permite-nos explorar tecnologias modernas e fortalecer as
+        nossas competências na área, preparando-nos para os desafios do mercado de trabalho na área da programação.</p>
     </div>
     <div class="fotografiascontactos container">
       <div class="row row-col-1 row-col-md-3 g-4">
         <!-- Coluna 1 -->
         <div class="col">
-          <div class="card h-100" id="cardcontactos">
+          <div class="card h-100" id="cardcontactose">
             <div id="contactoselisa"><img src="assets/img/elisa.png" class="card-img-top img-fluid" alt="elisa"></div>
             <div class="conteudocontactos text-center p-3">
               <h1 class="fs-5">Elisa Eusébio</h1>
@@ -52,7 +54,7 @@
         </div>
         <!-- Coluna 2 -->
         <div class="col">
-          <div class="card h-100" id="cardcontactos">
+          <div class="card h-100" id="cardcontactosj">
             <div id="contactosjoana"><img src="assets/img/Joana.jpg" class="card-img-top img-fluid" alt="joana"></div>
             <div class="conteudocontactos text-center p-3">
               <h1 class="fs-5">Joana Santos</h1>
@@ -62,7 +64,7 @@
         </div>
         <!-- Coluna 3 -->
         <div class="col">
-          <div class="card h-100" id="cardcontactos">
+          <div class="card h-100" id="cardcontactosi">
             <div id="contactosines"><img src="assets/img/pessoa.png" class="card-img-top img-fluid" alt="ines"></div>
             <div class="conteudocontactos text-center p-3">
               <h1 class="fs-5">Inês Sousa</h1>
@@ -73,75 +75,71 @@
       </div>
     </div>
   </section>
-
+  <br>
+  <br>
   <!--Formulário de contacto-->
   <form class="container">
     <div>
-      <h1 class="text-center">Contacte-nos</h1>
+      <h1 class="titulocontactos text-center">Contacte-nos</h1>
     </div>
     <div class="row g-3">
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
-      </div>
-      <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4">
-      </div>
-      <div class="col-12">
-        <label for="inputAddress" class="form-label">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-      </div>
-      <div class="col-12">
-        <label for="inputAddress2" class="form-label">Address 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-      </div>
-      <div class="col-md-6">
-        <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="col-md-2">
-        <label for="inputZip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="inputZip">
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
+        <div>
+          <label for="inputnome" class="nome form-label">Nome</label>
+          <input type="nome" class="form-control" id="inputnome">
+        </div>
+        <div>
+          <label for="exampleInputEmail1" class="email form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <div class="col-md-4">
+          <p>
+            <label for="inputnome" class="form-label" id="inputnumber">Contacto</label>
+            <input type="number" class="form-control" placeholder="+351" aria-label="Contacto">
+          </p>
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label"></label>
+          <input class="form-control" type="file" id="formFile">
         </div>
       </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
+      <div class="col-md-6">
+        <textarea class="form-control" placeholder="Escreva o seu comentário ou questão..."
+          id="floatingTextarea2"></textarea>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Desejo receber informações sobre a nossa empresa
+            </label>
+          </div>
+        </div>
+        <div class="col-12 mb-4 text-center">
+          <button type="submit" class=" btn btn-primary" id="enviar">Enviar</button>
+        </div>
+      </div>
+      
+      <div class="infempresa">
+        <h5>Informações de Contato</h5>
+        <address>
+          <div>Rua General Norton de Matos</div>
+          <div>Apartado 4133,</div>
+          <p>2411-901 Leiria – Portugal</p>
+          <a href="tel:+000000000000">+000 000 000 000</a>
+        </address>
       </div>
     </div>
   </form>
 
 
-
-
-
-
-
-
-  <!--rodape-->
-
+  <!-- Rodapé -->
   <footer>
     <div class="footer">
       <div class="row">
         <div class="col-md-12 mix-auto text-center">
           <img src="assets/img/logoipl.png" alt="logo" width="200" class="logofooter">
         </div>
-
-
         <div class="setoresfooter">
           <div class="col-md-12 text-center">
             <p class="d-inline ">
@@ -164,16 +162,19 @@
 
         <div class="redessociais">
           <div class="col-md-12 text-center" style="padding-bottom: 0px">
-            <ul class="list-unstyled d-flex"> <!--tirar os pontos da lista -->
+            <ul class="list-unstyled d-flex">
               <li class="mx-auto" style="width: 100%">
                 <a href="https://www.linkedin.com/" target="_blank">
-                  <img src="assets/img/Redessociais/Linkedin.svg" alt="LinkedIn" width="30" class="iconsredes"></a>
+                  <img src="assets/img/Redessociais/Linkedin.svg" alt="LinkedIn" width="30"
+                    class="iconsredes linkedin"></a>
                 <a href="https://www.facebook.com" target="_blank"></a>
-                <img src="assets/img/Redessociais/facebook.svg" alt="Facebook" width="30" class="iconsredes"></a>
+                <img src="assets/img/Redessociais/facebook.svg" alt="Facebook" width="30"
+                  class="iconsredes facebook"></a>
                 <a href="https://www.instagram.com" target="_blank">
-                  <img src="assets/img/Redessociais/instagram.svg" alt="Facebook" width="30" class="iconsredes"></a>
+                  <img src="assets/img/Redessociais/instagram.svg" alt="Facebook" width="30"
+                    class="iconsredes instagram"></a>
                 <a href="https://x.com" target="_blank">
-                  <img src="assets/img/Redessociais/Twitter.svg" alt="Facebook" width="30" class="iconsredes"></a>
+                  <img src="assets/img/Redessociais/Twitter.svg" alt="Facebook" width="30" class="iconsredes x"></a>
               </li>
             </ul>
           </div>
@@ -186,7 +187,6 @@
     </div>
   </footer>
 
-
   <!--java-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
@@ -196,6 +196,7 @@
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   <script src="assets/js/JavaScript.js"></script>
+
 </body>
 
 </html>
