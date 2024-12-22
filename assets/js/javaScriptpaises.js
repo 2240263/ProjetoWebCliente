@@ -46,8 +46,17 @@ $('#pesquisarbotao').on('click', function () {
 });
 
 
-function adicionarFavoritos(nomePais, bandeiraPais) {
-    console.log("Adicionado aos favoritos: " + nomePais);
-    // Altere a classe do ícone de coração para preenchido quando favoritado
-    document.querySelector('.bi-heart').classList.toggle('bi-heart-fill');
+function adicionarFavoritos(nomePais, bandeira) {
+    
+
+      
+// alerta dizendo que o país foi adicionado aos favoritos
+    alert(`${nomePais} foi inserido nos seus favoritos!`);
 }
+
+
+var arrayPaisesFavoritos = JSON.parse(localStorage.getItem("PaisesFavoritos"));
+if (!Array.isArray(arrayPaisesFavoritos)) {
+    arrayPaisesFavoritos = [];
+}
+// Função para adicionar um país aos favoritos
