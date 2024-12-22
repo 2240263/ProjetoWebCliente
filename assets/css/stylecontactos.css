@@ -1,4 +1,3 @@
-/*----------------------------------------------------Esseciais da página----------------------------------------------------*/
 
 /*footer*/
 .footer {
@@ -94,13 +93,7 @@ section {
     color: rgb(5, 143, 207);
 }
 
-
-
-
-/*----------------------------------------------------pagina contactos----------------------------------------------------*/
-
-
-
+/* Parte dos Card da equipa*/
 /* Ajuste das imagens dos card */
 #contactoselisa img,#contactosjoana img,#contactosines img {
     width: 240px; 
@@ -129,4 +122,63 @@ section {
 /*Ajuste dos cards */
 .conteudocontactos {
     padding: 15px; 
+}
+
+.sobrenos {
+    text-align: center;
+    padding: 30px;
+    font-size: 55px;
+    color: black;
+    font-weight: bold;
+}
+#cardcontactosi{
+    border:#e7e3e3 3px solid;
+    border-radius: 0px;
+}
+#cardcontactosj{
+    border:#e7e3e3 3px solid;
+    border-radius: 0px;
+}
+#cardcontactose{   
+    border:#e7e3e3 3px solid;
+    border-radius: 0px;
+}
+#cardcontactosi:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#cardcontactosj:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#cardcontactose:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+/*Formulário de contacto*/
+.titulocontactos {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.nome{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#floatingTextarea2{
+    margin-top: 50px;
+    height: 200px
+}
+
+#inputnumber{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.email{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
