@@ -28,7 +28,6 @@
     margin: 10px;
 }
 
-
 /* Troca as imagens ao passar o rato */
 .x:hover {
     content: url('../img/Redessociais/Acess/tw.svg');
@@ -49,7 +48,6 @@
 }
 
 
-/*Menu*/
 /* Menu*/
 a.nav-linkcontactos {
 
@@ -100,7 +98,6 @@ section {
 /*----------------------------------------------------Pagina Países---------------------------------------------------*/
 
 
-
 /*Filtro de texto*/
 
 .input-group {
@@ -112,3 +109,93 @@ section {
 .input-group .btn {
     max-width: 50%; /* Tamanho do botao*/
 }
+
+
+/*Cards dos países*/
+
+.cardp {
+    margin: 15px;
+    border: 1px solid #e7e3e3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 485px;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+}
+
+.card-header {       
+    display: inline;                                        
+    justify-content: center; /*  texto ao centro */
+    margin-top: 10px; 
+}
+
+.card-header .card-title {
+    margin-right: 20px;          /* Espaço entre o nome do país e o ícone */
+    padding: 5px;
+    margin-top: 5px; 
+    display: inline-flex; 
+}
+
+
+
+
+.card-imga {
+    width: 100%;
+    height: 170px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+
+.card-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.card-capital , .card-populacao, .card-continente, .card-linguas p {
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    margin: 10px;
+    
+}
+
+.cardp:hover {
+    border: solid 1px rgb(133, 134, 134);
+    box-shadow: 8px 8px 12px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cardp:hover .btn-favoritos { /* efeito de hover no botão de favoritos (2 ao mesmo tempo) */
+    background-color: rgb(5, 143, 207);
+    color: white;
+}
+
+
+
+/*Botão de favoritos*/
+
+.btn-favoritos {
+    background-color: white;
+    color: black; 
+    padding: 5px 15px; 
+    align-items:left; 
+    font-size: 16px; 
+    border: solid 1px rgb(175, 172, 172);  
+   
+    
+}
+
+.btn-favoritos:hover {
+    background-color: rgb(5, 143, 207);
+    color: white; 
+}
+
+
+
+
+
