@@ -71,3 +71,10 @@ function adicionarFavoritos(nomePais) {
     alert(`${nomePais} foi inserido nos seus favoritos!`);
 }
 
+/* Botão ver mais*/
+   
+
+function verdetalhes(nomePais) {
+    console.log('Nome do País:', nomePais);  // Verifica se o nome do país foi passado corretamente
+    window.location.href = 'detalhespaises.html?pais=' + encodeURIComponent(nomePais);
+}

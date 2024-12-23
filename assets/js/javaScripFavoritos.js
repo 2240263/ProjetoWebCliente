@@ -67,3 +67,11 @@ function removerFavoritos(nomePais) {
     alert(`${nomePais} foi removido dos favoritos.`);
     location.reload();  // Recarrega a página para refletir a remoção
 }
+
+/* Botão ver mais*/
+   
+
+function verdetalhes(nomePais) {
+    console.log('Nome do País:', nomePais);  // Verifica se o nome do país foi passado corretamente
+    window.location.href = 'detalhespaises.html?pais=' + encodeURIComponent(nomePais);
+}
