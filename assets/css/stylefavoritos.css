@@ -95,20 +95,7 @@ section {
 
 
 
-/*----------------------------------------------------Pagina Países---------------------------------------------------*/
-
-
-/*Filtro de texto*/
-
-.input-group {
-    max-width: 400px;  /* Define o limite máximo de largura */
-    margin: 0 auto;    /* Centra o filtro de texto */
-}
-
-
-.input-group .btn {
-    max-width: 50%; /* Tamanho do botao*/
-}
+/*----------------------------------------------------Pagina Favoritos---------------------------------------------------*/
 
 
 /*Cards dos países*/
@@ -128,11 +115,11 @@ section {
 .card-header {       
     display: inline;                                        
     justify-content: center; /*  texto ao centro */
-    margin-top: 10px; 
+    margin-top: 50px; 
 }
 
 .card-header .card-title {
-    margin-right: 20px;          /* Espaço entre o nome do país e o ícone */
+    margin-right: 10px;          /* Espaço entre o nome do país e o ícone */
     padding: 5px;
     margin-top: 5px; 
     display: inline-flex; 
@@ -169,9 +156,9 @@ section {
     box-shadow: 8px 8px 12px 8px rgba(0, 0, 0, 0.2);
 }
 
-.cardp:hover .btn-favoritos { /* efeito de hover no botão de favoritos (2 ao mesmo tempo) */
-    background-color: rgb(5, 143, 207);
-    color: white;
+.cardp:hover .btn-verdetalhes { /* efeito de hover no botão de ver + card (2 ao mesmo tempo) */
+    background-color: rgb(15, 15, 15);
+    color: rgb(247, 244, 244);
 }
 
 
@@ -214,3 +201,5 @@ section {
     background-color: rgb(143, 145, 146);
     color: rgb(14, 13, 13); 
 }
+
+
