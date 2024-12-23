@@ -203,3 +203,33 @@ section {
 }
 
 
+/*---------------------------------------Responsividade---------------------------------------*/
+@media only screen and (max-width: 768px) {
+    #cardfavoritos{
+        display: block;
+        width: 90%; /* Define largura para evitar que o card ocupe toda a tela */
+        max-width: 400px; /* Limita o tamanho máximo do card */
+        margin: 10px auto; 
+    }
+
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #cardfavoritos{
+        display: block;
+        width: 90%; 
+        max-width: 400px; 
+        margin: 10px auto; 
+        
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1398px) {
+    #cardfavoritos{
+        display: block;
+        width: 90%; 
+        max-width: 400px; 
+        margin: 10px auto; 
+    }
+}

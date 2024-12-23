@@ -1,93 +1,97 @@
 
-// Função para validar o formulário
 function validateForm() {
     let isValid = true;
 
-    // Validar o nome
     var inputNome = document.getElementById("inputnome");
-    if (!inputNome || inputNome.value.trim().length < 3) {// Se o nome não existir ou tiver menos de 3 caracteres
-        showError(inputNome, "O nome deve ter pelo menos 3 caracteres.");
+    if (!inputNome || inputNome.value.trim().length < 3) {
+        showError("name", "O nome deve ter pelo menos 3 caracteres.");
         isValid = false;
     } else {
-        hideError(inputNome);
+        hideError("name");
     }
 
-    // Validar o email
     var inputEmail = document.getElementById("exampleInputEmail1");
     if (!inputEmail || !validateEmail(inputEmail.value)) {
-        showError(inputEmail, "Por favor, insira um email válido.");
+        showError("email", "Por favor, insira um email válido.");
         isValid = false;
     } else {
-        hideError(inputEmail);
+        hideError("email");
     }
 
-    // Validar o contacto
-    var inputNumber = document.querySelector("input[type='number']");
-    if (!inputNumber || inputNumber.value.trim() === "" || isNaN(inputNumber.value)) {
-        showError(inputNumber, "Por favor, insira um número de contacto válido.");
+    var inputNumber = document.getElementById("inputnumero");
+    if (!inputNumber || !validatenumero(inputNumber.value.trim())) {
+        showError("numero", "Por favor, insira um número de telefone válido (9 a 15 dígitos).");
         isValid = false;
     } else {
-        hideError(inputNumber);
+        hideError("numero");
     }
 
-    // Validar o comentário ou questão
     var textArea = document.getElementById("floatingTextarea2");
     if (!textArea || textArea.value.trim() === "") {
-        showError(textArea, "Por favor, insira um comentário ou questão.");
+        showError("message", "Por favor, insira um comentário ou questão.");
         isValid = false;
     } else {
-        hideError(textArea);
+        hideError("message");
     }
-    //validação dos termos e condições
+
+    var inputTerms = document.getElementById("terms");
     if (!inputTerms.checked) {
-        isValid = false;
         showError("terms", "Aceite os termos e condições!");
-    }
-    else {
+        isValid = false;
+    } else {
         hideError("terms");
     }
 
     return isValid;
 }
 
-// Função para validar email
 function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
-
-// Função para mostrar erro
-function showError(element, message) {
-    if (!element) return;
-//criar um elemento para mostrar a mensagem de erro
-    let errorElement = element.nextElementSibling;
-    if (!errorElement || !errorElement.classList.contains("error-message")) {
-        errorElement = document.createElement("div");
-        errorElement.classList.add("error-message");
-        element.parentNode.appendChild(errorElement);
-    }
-    errorElement.textContent = message;
-    element.classList.add("is-invalid");
+function validatenumero(numero) {
+    // Permitir apenas números com 9 a 15 dígitos e pode começar com "+"
+    const regex = /^\+?[0-9]{9,15}$/;
+    return regex.test(numero);
 }
 
-// Função para esconder erro
-function hideError(element) {
-    if (!element) return;
-
-    const errorElement = element.nextElementSibling; // Elemento que contém a mensagem de erro
-    if (errorElement && errorElement.classList.contains("error-message")) {// Se existir um elemento de erro
-        errorElement.textContent = "";
-        errorElement.remove();
+function showError(fieldId, message) {
+    var divError = document.getElementById(`${fieldId}-error`);
+    if (divError) {
+        divError.textContent = message;
+        divError.style.display = "block";
     }
-    element.classList.remove("is-invalid");
 }
 
-// envio do formulário
-document.getElementById("enviar").addEventListener("click", function (event) {
-    event.preventDefault(); 
-    if (validateForm()) {
-        alert("Formulário enviado com sucesso!");
-    } else {
-        alert("Por favor, corrija os erros antes de enviar.");
+function hideError(fieldId) {
+    var divError = document.getElementById(`${fieldId}-error`);
+    if (divError) {
+        divError.style.display = "none";
+        divError.textContent = "";
     }
-});
+}
+
+// Função para guardar os dados do formulário
+function saveFormData() {
+    const formData = {
+        name: document.getElementById("inputnome").value,
+        email: document.getElementById("exampleInputEmail1").value,
+        message: document.getElementById("floatingTextarea2").value,
+        phone: document.getElementById("inputnumero").value,
+        terms: document.getElementById("terms").checked,  // se o checkbox foi marcado
+        file: document.getElementById("formFile").files[0],  // arquivo
+    };
+
+    // Exibe os dados no console
+    console.log("Dados do formulário salvos:", formData);
+
+    // Exibe a mensagem de sucesso
+    const mensagemSucesso = document.getElementById("mensagemSucesso");
+    mensagemSucesso.style.display = "block";  // Torna visível a mensagem de sucesso
+
+    // Limpa os dados do formulário 
+    document.getElementById("contact-form").reset();
+}
+
+//fazer a validação do formulário
+document.getElementById("enviar").addEventListener("click", saveFormData);
