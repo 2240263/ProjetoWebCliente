@@ -1,4 +1,3 @@
-
 function validateForm() {
     let isValid = true;
 
@@ -49,8 +48,8 @@ function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
+
 function validatenumero(numero) {
-    // Permitir apenas números com 9 a 15 dígitos e pode começar com "+"
     const regex = /^\+?[0-9]{9,15}$/;
     return regex.test(numero);
 }
@@ -71,27 +70,32 @@ function hideError(fieldId) {
     }
 }
 
-// Função para guardar os dados do formulário
+// Função para exibir mensagem de sucesso
+function showSuccessMessage() {
+    var successMessage = document.getElementById("mensagemSucesso");
+    successMessage.style.display = "block"; // Exibe a mensagem de sucesso
+    setTimeout(function () {
+        successMessage.style.display = "none"; // Oculta a mensagem após 5 segundos
+    }, 5000);
+}
+
+document.getElementById("enviar").addEventListener("click", function (event) {
+    event.preventDefault(); // Previne o envio do formulário real
+    if (validateForm()) {
+        showSuccessMessage(); // Exibe a mensagem de sucesso
+        saveFormData(); // Função para salvar os dados do formulário
+    } else {
+        alert("Por favor, corrija os erros antes de enviar.");
+    }
+});
+
+// Função para guardar dados do formulário
 function saveFormData() {
-    const formData = {
+    var formData = {
         name: document.getElementById("inputnome").value,
         email: document.getElementById("exampleInputEmail1").value,
         message: document.getElementById("floatingTextarea2").value,
         phone: document.getElementById("inputnumero").value,
-        terms: document.getElementById("terms").checked,  // se o checkbox foi marcado
-        file: document.getElementById("formFile").files[0],  // arquivo
     };
-
-    // Exibe os dados no console
     console.log("Dados do formulário salvos:", formData);
-
-    // Exibe a mensagem de sucesso
-    const mensagemSucesso = document.getElementById("mensagemSucesso");
-    mensagemSucesso.style.display = "block";  // Torna visível a mensagem de sucesso
-
-    // Limpa os dados do formulário 
-    document.getElementById("contact-form").reset();
 }
-
-//fazer a validação do formulário
-document.getElementById("enviar").addEventListener("click", saveFormData);

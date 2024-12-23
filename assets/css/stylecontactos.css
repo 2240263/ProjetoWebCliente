@@ -196,3 +196,96 @@ margin-bottom: 20px;
     margin-top: 30px;
 }
 
+.error{
+    color: red;
+    font-size: 10px;
+   
+}
+#mensagemSucesso{
+    display: none;
+    color: green;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos gerais para dispositivos com largura de até 768px */
+@media only screen and (max-width: 768px){
+    #logo {
+        width: 150px;
+        max-width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        margin-left: 15px;
+        /*espaço entre os botões do menu*/
+    }
+
+    .navbar-nav .nav-linkcontactos {
+        align-items: center;
+    }
+
+    /*sobre nos*/
+    .sobrenos {
+        font-size:20px; /* Tamanho menor para telas pequenas */
+        text-align: center;
+    }
+
+    .textoquipa {
+        font-size: 15px;
+        padding: 10px;
+        display:inline;
+        margin-top: 20px;
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .fotografiascontactos .row {
+        display: block;
+    }
+
+    .fotografiascontactos .col {
+        margin-bottom: 20px; /* Espaçamento entre cards */
+    }
+
+    .fotografiascontactos img {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudocontactos h1 {
+        font-size: 20px; /* Reduzir o tamanho do título */
+        text-align: center;
+    }
+
+    .conteudocontactos p {
+        font-size: 15px; /* Reduzir o tamanho do texto */
+    }
+
+    /* ---------------------------------------Ajustes para o formulário de contacto ------------------------------*/
+    #contact-form .row {
+        display: block; /* Cada linha ocupa toda a largura */
+    }
+
+    #contact-form .col-md-6 {
+        width: 100%; /* Cada coluna ocupa toda a largura */
+    }
+
+    #contact-form textarea {
+        height: 150px; /* Ajusta a altura do campo de texto */
+    }
+
+    #contact-form .form-check {
+        text-align: left; /* Alinhar checkbox à esquerda */
+    }
+
+    #contact-form .btn {
+        width: 100%; /* Botão ocupa toda a largura */
+        padding: 10px;
+    }
+    
+}
