@@ -32,7 +32,7 @@ $('#pesquisarbotao').on('click', function () {
                                             <p class="card-continente"><strong>Continente:</strong>  ${pais.region}</p>
                                             <p class="card-linguas"><strong>Idiomas:</strong> ${languages.length > 1 ? languages.join(', ') : languages[0]}</p>
                                             <button class="btn btn-verdetalhes" onclick="verdetalhes('${pais.name.common}')"> Ver </button></button> 
-                                            <button class="btn btn-favoritos" onclick="removerFavoritos('${pais.name.common}')"> Remover dos Favoritos </button>
+                                            <button class="btn btn-favoritos" onclick="adicionarFavoritos('${pais.name.common}')"> Adicionar  Favoritos </button>
                                         </div>
                                     </div>
                                 </div>`;

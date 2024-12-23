@@ -12,8 +12,13 @@ $(document).ready(function () {
             method: 'GET',
             success: function (countries) {
 
-                // Limpar a tabela antes de adicionar os dados
-                $('#countryTable tbody').empty();
+                // Limpa os dados da tabela 
+                $('#countrynome').text('');
+                $('#countrycapital').text('');
+                $('#countrypopulacao').text('');
+                $('#countryarea').text('');
+                $('#countryregiao').text('');
+                $('#countrysubregiao').text('');
 
                 var country = countries[0];
 
