@@ -12,32 +12,26 @@ $(document).ready(function () {
             method: 'GET',
             success: function (countries) {
 
-                var countriesData = countries;// variavel para armazenar os dados dos países
-
                 // Limpar a tabela antes de adicionar os dados
                 $('#countryTable tbody').empty();
 
-                $.each(countriesData, function (index, country) { /* Iterar sobre os dados e adicionar as linhas na tabela */
-                    // criacao da tabela com os dados
-                    var row = `<tr>
-                        <td>${country.name.common}</td>
-                        <td>${country.capital ? country.capital[0] : 'N/A'}</td>
-                        <td>${country.population}</td>
-                        <td>${country.area}</td>
-                        <td>${country.region}</td>
-                        <td>${country.subregion}</td>
-                    </tr>`;
+                var country = countries[0];
 
-                    // Adicionar a linha na tabela
-                    $('#countryTable tbody').append(row);
-                }),
-                    
+                // Preenche os dados do país na tabela
+                $('#countrynome').text(country.name.common); // Nome do país
+                $('#countrycapital').text(country.capital ? country.capital[0] : 'N/A'); // Capital
+                $('#countrypopulacao').text(country.population ? country.population.toLocaleString() : 'N/A'); // População
+                $('#countryarea').text(country.area ? country.area.toLocaleString() : 'N/A'); // Área
+                $('#countryregiao').text(country.region); // Região
+                $('#countrysubregiao').text(country.subregion); // Sub-região
+            },
+            error: function () {
+                // Em caso de erro, exibe uma mensagem de alerta
+                alert('Erro ao carregar os dados do país.');
             }
         });
-    }
-    else {
-        function () {
-            alert('Erro ao carregar os dados dos países');
-        }
+    } else {
+        // Se não encontrar o parâmetro 'pais' na URL
+        alert('Parâmetro "pais" não encontrado na URL.');
     }
 });
