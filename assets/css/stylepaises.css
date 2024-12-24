@@ -3,7 +3,9 @@
 
 /*footer*/
 .footer {
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     color: black;
     padding: 20px;
     background-color: #e7e3e3;
