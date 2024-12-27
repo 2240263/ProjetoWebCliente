@@ -3,12 +3,15 @@
 
 /*footer*/
 .footer {
-    bottom: 0;
-    width: 100%;
+
     color: black;
     padding: 20px;
     background-color: #e7e3e3;
+    width: 100%;
+    bottom: 0;
+    position: relative;
 }
+
 
 .logofooter {
     padding: 10px;

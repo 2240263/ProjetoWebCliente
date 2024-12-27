@@ -7,6 +7,8 @@
     padding: 20px;
     background-color: #e7e3e3;
     width: 100%;
+    bottom: 0;
+    position: relative;
 }
 
 .logofooter {
@@ -92,14 +94,6 @@ section {
     /*para o home ficar azul quando passar o mouse*/
     color: rgb(5, 143, 207);
 }
-
-
-
-
-
-
-
-
 
 
 

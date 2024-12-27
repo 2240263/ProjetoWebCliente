@@ -32,7 +32,6 @@
     content: url('../img/Redessociais/Acess/tw.svg');
 }
 
-/* Troca as imagens ao passar o rato */
 .linkedin:hover {
     content: url('../img/Redessociais/Acess/link.svg');
 }
@@ -41,14 +40,13 @@
     content: url('../img/Redessociais/Acess/face.svg');
 }
 
-/* Troca as imagens ao passar o rato */
+
 .instagram:hover {
     content: url('../img/Redessociais/Acess/inst.svg');
 }
 
 
 /*Menu*/
-/* Menu*/
 a.nav-linkcontactos {
 
     border: 2px solid rgb(5, 143, 207);
@@ -60,7 +58,7 @@ a.nav-linkcontactos {
 
 }
 
-/*para ficar o botao azul quando passar o mouse*/
+/*para ficar o botao azul quando passar o rato*/
 a.nav-linkcontactos:hover {
     background-color: rgb(5, 143, 207);
 
@@ -89,13 +87,13 @@ section {
 }
 
 .navbar-nav .home:hover {
-    /*para o home ficar azul quando passar o mouse*/
+    /*para o home ficar azul quando passar o rato*/
     color: rgb(5, 143, 207);
 }
 
 /* Parte dos Card da equipa*/
 /* Ajuste das imagens dos card */
-#contactoselisa img,#contactosjoana img,#contactosines img {
+#contactoselisa img,#contactosjoana img,#contactosestudante img {
     width: 240px; 
     height: 240px; 
     border-radius: 0; /*cantos quadrados */
@@ -117,9 +115,9 @@ section {
     text-align: center;
     margin-top: 10px;
     line-height: 30px; /*espaçamento entre linhas*/
-    max-width: 90%; /* Ajuste a largura conforme necessário */
-    margin: 0 auto; /* Centraliza o texto */
-    padding: 0 15px 30px; /* Adiciona um pouco de espaço nas laterais */
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding: 0 15px 30px; 
   
 }
 
@@ -235,17 +233,17 @@ margin-bottom: 20px;
         
     }
 
-    .textoquipa {
-        font-size: 15px;
-        padding: 10px;
-        display:inline;
-        margin-top: 20px;
-        line-height: 1.6;
-        text-align: justify;
-        margin-bottom: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-       
+
+    .textoquipa{
+        font-size: 13px;
+        color: black;
+        text-align: center;
+        margin-top: 10px;
+        line-height: 30px; /*espaçamento entre linhas*/
+        max-width: 90%; 
+        margin: 0 auto; 
+        padding: 0 15px 30px; 
+      
     }
 
     .fotografiascontactos .row {
