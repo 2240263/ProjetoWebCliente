@@ -116,10 +116,11 @@ section {
     color: black;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 40px;
-    margin-right: 250px;
-    margin-left: 250px;
-    line-height: 30px;
+    line-height: 30px; /*espaçamento entre linhas*/
+    max-width: 90%; /* Ajuste a largura conforme necessário */
+    margin: 0 auto; /* Centraliza o texto */
+    padding: 0 15px 30px; /* Adiciona um pouco de espaço nas laterais */
+  
 }
 
 /*Ajuste dos cards */
@@ -133,6 +134,7 @@ section {
     font-size: 55px;
     color: black;
     font-weight: bold;
+
 }
 #cardcontactosi{
     border:#e7e3e3 3px solid;
@@ -230,6 +232,7 @@ margin-bottom: 20px;
     .sobrenos {
         font-size:20px; /* Tamanho menor para telas pequenas */
         text-align: center;
+        
     }
 
     .textoquipa {
@@ -242,6 +245,7 @@ margin-bottom: 20px;
         margin-bottom: 20px;
         margin-left: 20px;
         margin-right: 20px;
+       
     }
 
     .fotografiascontactos .row {
@@ -263,7 +267,8 @@ margin-bottom: 20px;
     }
 
     .conteudocontactos p {
-        font-size: 15px; /* Reduzir o tamanho do texto */
+        font-size: 12px; /* Reduzir o tamanho do texto */
+        
     }
 
     /* ---------------------------------------Ajustes para o formulário de contacto ------------------------------*/

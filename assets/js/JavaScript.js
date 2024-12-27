@@ -54,7 +54,7 @@ $(document).ready(function () {
     }
 
     // Redireciona para a página de detalhes, passando o nome do país como parâmetro na URL
-    window.location.href = `detalhes.html?pais=${encodeURIComponent(paisNome)}`;
+    window.location.href = `detalhespaises.html?pais=${encodeURIComponent(paisNome)}`;
   }
 
   // Associar eventos de clique aos cards
@@ -73,3 +73,29 @@ $(document).ready(function () {
 
 });
 
+
+// botao explorar - comercial - redireciona para a página de países
+function explorar() {
+  window.location.href = "paginapaises.html"; 
+}
+
+
+
+
+
+
+// Quando o botões do carrousel forem clicados
+$(".botaojapao").click(function() {
+  window.location.href = "detalhespaises.html?pais=Japan";
+});
+
+
+$(".botaoaustralia").click(function() {
+  window.location.href = "detalhespaises.html?pais=Australia";
+});
+
+
+
+$(".botaoparis").click(function() {
+  window.location.href = "detalhespaises.html?pais=France";
+});

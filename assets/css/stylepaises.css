@@ -3,7 +3,6 @@
 
 /*footer*/
 .footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     color: black;
@@ -137,7 +136,7 @@ section {
     margin-right: 20px;          /* Espaço entre o nome do país e o ícone */
     padding: 5px;
     margin-top: 5px; 
-    display: inline-flex; 
+    display: inline-flex;
 }
 
 
