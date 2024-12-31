@@ -8,113 +8,118 @@
   <link rel="stylesheet" href="assets/css/stylefavoritos.css">
 </head>
 
-<body>
- <!--menu -->
-  <header class="container"> 
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid">
-        <img src="assets/img/logoipl.png" id="logo" alt="Logo" width="200">
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active home" target=" self" href="index.html">Home</a>
-          <a class="nav-link active" target=" self" href="paginapaises.html">Países</a>
-          <a class="nav-link active" target=" self" href="">Loja</a>
-          <a class="nav-link active" target=" self" href="favoritos.html">Favoritos</a>
-          <a class="nav-linkcontactos" target=" self" href="contactos.html">Contactos</a>
+<body class="d-flex flex-column min-vh-100">
+  <!--menu -->
+  <div class="container flex-grow-1">
+    <header class="container">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <img src="assets/img/logoipl.png" id="logo" alt="Logo" width="200">
         </div>
-      </div>
-    </nav>
-  </header>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active home" target=" self" href="index.html">Home</a>
+            <a class="nav-link active" target=" self" href="paginapaises.html">Países</a>
+            <a class="nav-link active" target=" self" href="">Loja</a>
+            <a class="nav-link active" target=" self" href="favoritos.html">Favoritos</a>
+            <a class="nav-linkcontactos" target=" self" href="contactos.html">Contactos</a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-<!-- Titulo da pagina -->
-  <section class="container py-5">
-    <div class="pagpaisesFavoritos">
-      <div class="row text-center">
-        <div class="col-12">
-          <h3 id="paisFavorito" class="display-4 text-primary mb-4">Os seus Países Favoritos</h2>
+    <!-- Titulo da pagina -->
+    <section class="container py-5">
+      <div class="pagpaisesFavoritos">
+        <div class="row text-center">
+          <div class="col-12">
+            <h3 id="paisFavorito" class="display-4 text-primary mb-4">Os seus Países Favoritos</h2>
+          </div>
         </div>
       </div>
-    </div>
-  
+
 
 
 
 
       <!-- Cards de Países Favoritos -->
       <!-- Espaço onde os países favoritos serão exibidos -->
-    
-    <div id="cardfavoritos" class="row"></div>
-    
-  </section>
 
+      <div id="cardfavoritos" class="row"></div>
 
+    </section>
 
- <!-- Rodapé -->
- <footer>
-  <div class="footer">
-    <div class="row">
-      <div class="col-md-12 mix-auto text-center">
-        <img src="assets/img/logoipl.png" alt="logo" width="200" class="logofooter">
-      </div>
-
-
-      <div class="setoresfooter">
-        <div class="col-md-12 text-center">
-          <p class="d-inline ">
-            <a href="index.html">Home</a>
-          </p>
-          <p class="d-inline">
-            <a href="paginapaises.html">Países</a>
-          </p>
-          <p class="d-inline">
-            <a href="">Loja</a>
-          </p>
-          <p class="d-inline">
-            <a href="favoritos.html">Favoritos</a>
-          </p>
-          <p class="d-inline">
-            <a href="contactos.html">Contactos</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="redessociais">
-        <div class="col-md-12 text-center" style="padding-bottom: 0px">
-          <ul class="list-unstyled d-flex"> <!--tirar os pontos da lista -->
-            <li class="mx-auto" style="width: 100%">
-              <a href="https://www.linkedin.com/" target="_blank">
-                <img src="assets/img/Redessociais/Linkedin.svg" alt="LinkedIn" width="30" class="iconsredes linkedin"></a>
-              <a href="https://www.facebook.com" target="_blank">
-                <img src="assets/img/Redessociais/facebook.svg" alt="Facebook" width="30" class="iconsredes facebook"></a>
-              <a href="https://www.instagram.com" target="_blank">
-                <img src="assets/img/Redessociais/instagram.svg" alt="Facebook" width="30" class="iconsredes instagram"></a>
-              <a href="https://x.com" target="_blank">
-                <img src="assets/img/Redessociais/Twitter.svg" alt="Facebook" width="30" class="iconsredes x"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="text-center">
-      <small> ©2024 Direitos de Autor. Todos os direitos reservados.</small>
-    </div>
   </div>
-</footer>
 
-<!--java-->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <!-- Rodapé -->
+  <footer class="mt-auto">
+    <div class="footer">
+      <div class="row">
+        <div class="col-md-12 mix-auto text-center">
+          <img src="assets/img/logoipl.png" alt="logo" width="200" class="logofooter">
+        </div>
 
-<!--Jquery-->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-<script src="assets/js/javaScripFavoritos.js"></script>
+        <div class="setoresfooter">
+          <div class="col-md-12 text-center">
+            <p class="d-inline ">
+              <a href="index.html">Home</a>
+            </p>
+            <p class="d-inline">
+              <a href="paginapaises.html">Países</a>
+            </p>
+            <p class="d-inline">
+              <a href="">Loja</a>
+            </p>
+            <p class="d-inline">
+              <a href="favoritos.html">Favoritos</a>
+            </p>
+            <p class="d-inline">
+              <a href="contactos.html">Contactos</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="redessociais">
+          <div class="col-md-12 text-center" style="padding-bottom: 0px">
+            <ul class="list-unstyled d-flex"> <!--tirar os pontos da lista -->
+              <li class="mx-auto" style="width: 100%">
+                <a href="https://www.linkedin.com/" target="_blank">
+                  <img src="assets/img/Redessociais/Linkedin.svg" alt="LinkedIn" width="30"
+                    class="iconsredes linkedin"></a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <img src="assets/img/Redessociais/facebook.svg" alt="Facebook" width="30"
+                    class="iconsredes facebook"></a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <img src="assets/img/Redessociais/instagram.svg" alt="Facebook" width="30"
+                    class="iconsredes instagram"></a>
+                <a href="https://x.com" target="_blank">
+                  <img src="assets/img/Redessociais/Twitter.svg" alt="Facebook" width="30" class="iconsredes x"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <small> ©2024 Direitos de Autor. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!--java-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+  <!--Jquery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="assets/js/javaScripFavoritos.js"></script>
 
 
 
