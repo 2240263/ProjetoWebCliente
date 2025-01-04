@@ -7,13 +7,11 @@ a.nav-linkcontactos {
     text-align: center;
     text-decoration: none;
     /*tirar sublinhado do link*/
-
 }
 
 /*para ficar o botao azul quando passar o mouse*/
 a.nav-linkcontactos:hover {
     background-color: rgb(5, 143, 207);
-
 }
 
 .navbar-nav {
@@ -22,7 +20,6 @@ a.nav-linkcontactos:hover {
     align-items: center;
     padding: 10px;
     color: black;
-
 }
 
 .navbar-nav a {
@@ -162,6 +159,8 @@ section {
     /*definição da imagem da bandeira*/
     width: 100%;
     height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /*sonbra*/
 }
 
 /* imagem comercial*/
@@ -205,7 +204,6 @@ section {
     border: 1px solid white;
     background-color: transparent;
     color: white;
-
 }
 
 /*sobre nós*/
@@ -230,7 +228,6 @@ section {
     color: rgb(97, 95, 95);
     text-align: center;
     padding: 0px;
-
 }
 
 .fotografias {
@@ -245,7 +242,6 @@ section {
     /* Centraliza a imagem */
     display: block;
     /* para a imagem ficar no centro*/
-
 }
 
 #elisa img {
@@ -256,7 +252,6 @@ section {
     /* remove o arredondamento dos cantos da fotografia*/
     margin: 25px auto;
     display: block;
-
 }
 
 #joana img {
@@ -362,63 +357,6 @@ section {
 
 
 /* Responsividade */
-@media only screen and (min-width: 300px)and (max-width: 768px) {
-    .carousel-caption {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        display: flex;
-        padding: 20px;
-
-    }
-
-    .carousel-item {
-        flex-direction: column;
-        /* Empilha a imagem e o texto em telas pequenas */
-    }
-
-    .carousel-item img {
-        width: 100%;
-        /* Imagem ocupa toda a largura em telas pequenas */
-
-    }
-
-    .carousel-caption {
-        position: static;
-        /* A posição do texto vai ser normal em telas pequenas */
-    }
-
-    .carousel-caption h5 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .textojapao,
-    .textoaustralia,
-    .textoparis {
-        width: 100%;
-        /* O texto ocupa toda a largura */
-        padding: 10px;
-        /* Espaçamento interno */
-
-
-    }
-
-    /*tamanho dos botões */
-    .carousel-caption button {
-        font-size: 10px;
-        padding: 6px 12px;
-        /* Reduz as dimensões dos botões */
-        display: block;
-        /* Garante que o botão seja exibido corretamente */
-        margin: 0 auto;
-        /* Centraliza o botão */
-    }
-
-}
-
 
 @media only screen and (max-width: 668px) {
 
@@ -480,13 +418,14 @@ section {
     .footer {
         font-size: 12px;
     }
+
     .footer {
 
         color: black;
         padding: 10px;
         background-color: #e7e3e3;
     }
-   
+
 
     /*Carrousel*/
     .carousel-item img {
@@ -494,33 +433,20 @@ section {
         width: 100%;
     }
 
-
     .carousel-caption {
         position: absolute;
-        max-width: 100%;
+        width: 100%;
         left: 60px;
         right: 180px;
-        padding: 10px;
+        padding: 0px;
+        transform: translateY(-65%);
+        /* vai ajustar o texto para o centro do carrousel*/
     }
 
     .carousel-caption .col-12.col-md-6 {
-        width: 100%;
+        width: 50%;
         /* Faz o texto ocupar toda a largura em telas pequenas */
-
     }
-
-    /*tamanho dos botões */
-    .carousel-caption button {
-        font-size: 10px;
-        padding: 5px 10px;
-        /* Reduz as dimensões dos botões */
-        display: block;
-        /* Garante que o botão seja exibido corretamente */
-        margin: 0px auto;
-        /* Centraliza o botão */
-    }
-
-    /* Carrousel */
 
     /*conteudo japao e Paris*/
     .textojapao h5,
@@ -529,15 +455,14 @@ section {
         color: black;
         font-weight: bold;
         left: 5px;
-        margin-top: 0px;
-
+        margin-top: 2px;
     }
 
     .textojapao p {
         font-size: 10px;
         color: black;
         left: 5px;
-        margin-top: 0px;
+        margin-top: 5px;
         margin-bottom: 0px;
     }
 
@@ -546,7 +471,7 @@ section {
         color: black;
         left: 5px;
         margin-top: 0px;
-        margin-bottom: 0px;
+        margin-bottom: 5px;
     }
 
     /*conteudo australia */
@@ -563,7 +488,7 @@ section {
         color: white;
         left: 5px;
         margin-top: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .carousel-indicators {
@@ -572,11 +497,12 @@ section {
 
     .botaojapao,
     .botaoparis {
-        padding: 5px 20px;
+        padding: 5px 10px;
         border: 2px solid rgb(5, 143, 207);
-        float: left;
         background-color: transparent;
-
+        float: left;
+        font-size: 10px;
+        margin-top: 5px;
     }
 
     .botaojapao:hover,
@@ -585,7 +511,6 @@ section {
         border: 2px solid rgb(5, 143, 207);
         background-color: rgb(5, 143, 207);
         float: left;
-
     }
 
     .botaoaustralia {
@@ -595,8 +520,7 @@ section {
         color: white;
         float: left;
         border: black;
-        
-
+        font-size: 10px;
     }
 
     .botaoaustralia:hover {
@@ -605,7 +529,6 @@ section {
         background-color: rgb(252, 248, 248);
         color: rgb(22, 1, 1);
         float: left;
-        
     }
 }
 
@@ -616,6 +539,8 @@ section {
         /*definição da imagem da bandeira*/
         width: 100%;
         height: 100px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /*sonbra*/
     }
 
     .card {
@@ -644,7 +569,6 @@ section {
         color: black;
         font-weight: bold;
         text-align: center;
-
     }
 
     .conteudo p {
@@ -652,7 +576,6 @@ section {
         color: rgb(97, 95, 95);
         text-align: center;
         padding: 0px;
-
     }
 
     .fotografias {
@@ -660,14 +583,13 @@ section {
         max-width: 100%;
         /* Garante que a imagem não ultrapasse o container */
         height: auto;
-        /* Mantém a proporção original */
+        /* Mantém a altura original */
         width: 80%;
         /* Ajusta o tamanho relativo ao container */
         margin: 0 auto;
         /* Centraliza a imagem */
         display: block;
         /* para a imagem ficar no centro*/
-
     }
 
     #elisa img {
@@ -678,7 +600,6 @@ section {
         /* remove o arredondamento dos cantos da fotografia*/
         margin: 25px auto;
         display: block;
-
     }
 
     #joana img {
@@ -723,56 +644,58 @@ section {
 
     /* Carrousel */
     .carousel-caption {
-        top: px;
+        top: 2px;
         text-align: left;
     }
 
     /*conteudo japao e Paris*/
     .textojapao h5,
     .textoparis h5 {
-        font-size: 15px;
+        font-size: 20px;
         color: black;
         font-weight: bold;
-        margin-left: 20px;
-
+        margin-left: 30px;
+        padding-top: 5px;
+        margin-right: 10px;
     }
 
     .textojapao p {
-        font-size: 10px;
+        font-size: 14px;
         color: black;
-        left: 5px;
         margin-top: 10px;
-        margin-right: 35px;
-        margin-left: 20px;
+        margin-right: 10px;
+        margin-left: 30px;
+        max-width: 65%;
     }
 
     .textoparis p {
-        font-size: 10px;
+        font-size: 14px;
         color: black;
-        margin-left: 20px;
+        margin-left: 25px;
+        margin-right: 10px;
     }
 
 
     /*conteudo australia */
 
     .textoaustralia h5 {
-        font-size: 15px;
+        font-size: 20px;
         color: white;
         font-weight: bold;
         margin-left: 20px;
+        padding-top: 5px;
+        margin-left: 30px;
     }
 
     .textoaustralia p {
-        font-size: 10px;
+        font-size: 14px;
         color: white;
         margin-left: 20px;
-        
+        margin-left: 30px;
     }
 
     .carousel-item img {
-        height: auto;
-        /* Garante que a imagem seja redimensionada proporcionalmente */
-        max-height: 300px;
+        height: 300px;
         width: 100%;
     }
 
@@ -788,40 +711,43 @@ section {
         left: 60px;
         right: 180px;
         padding: 10px;
+        transform: translateY(20%);
+        /* vai ajustar o texto para o centro do carrousel */
     }
 
 
     /* botões do carousel - explorar */
     .botaojapao,
     .botaoparis {
-        padding: 5px 15px;
+        padding: 5px 20px;
         border: 2px solid rgb(5, 143, 207);
         float: left;
         background-color: transparent;
-        margin:15px;
+        margin-left: 30px;
     }
 
 
     .botaojapao:hover,
     .botaoparis:hover {
-        padding: 5px 10px;
+        padding: 5px 20px;
         border: 2px solid rgb(5, 143, 207);
         background-color: rgb(5, 143, 207);
         float: left;
     }
 
     .botaoaustralia {
-        padding: 5px 10px;
+        padding: 5px 20px;
         border: 2px solid rgb(255, 251, 251);
         background-color: black;
         color: white;
         float: left;
         border: black;
-        margin:15px;
+        margin: 15px;
+        margin-left: 30px;
     }
 
     .botaoaustralia:hover {
-        padding: 5px 10px;
+        padding: 5px 20px;
         border: 2px solid rgb(255, 251, 251);
         background-color: rgb(252, 248, 248);
         color: rgb(22, 1, 1);
@@ -831,6 +757,7 @@ section {
     .footer {
         font-size: 15px;
     }
+
     .footer {
 
         color: black;

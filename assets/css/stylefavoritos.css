@@ -1,9 +1,7 @@
-
 /*----------------------------------------------------Esseciais da página----------------------------------------------------*/
 
 /*footer*/
 .footer {
-
     color: black;
     padding: 20px;
     background-color: #e7e3e3;
@@ -50,29 +48,24 @@
 
 /* Menu*/
 a.nav-linkcontactos {
-
     border: 2px solid rgb(5, 143, 207);
     color: black;
     padding: 10px;
     text-align: center;
     text-decoration: none;
     /*tirar sublinhado do link*/
-
 }
 
 /*para ficar o botao azul quando passar o mouse*/
 a.nav-linkcontactos:hover {
     background-color: rgb(5, 143, 207);
-
 }
 
 .navbar-nav {
     /*Para alinhar os botões do menu*/
-
     align-items: center;
     padding: 10px;
     color: black;
-
 }
 
 .navbar-nav a {
@@ -109,20 +102,21 @@ section {
     text-align: center;
     background-color: white;
     padding: 5px;
-    
 }
 
-.card-header {       
-    display: inline;                                        
-    justify-content: center; /*  texto ao centro */
-    margin-top: 50px; 
+.card-header {
+    display: inline;
+    justify-content: center;
+    /*  texto ao centro */
+    margin-top: 50px;
 }
 
 .card-header .card-title {
-    margin-right: 10px;          /* Espaço entre o nome do país e o ícone */
+    margin-right: 10px;
+    /* Espaço entre o nome do país e o ícone */
     padding: 5px;
-    margin-top: 5px; 
-    display: inline-flex; 
+    margin-top: 5px;
+    display: inline-flex;
 }
 
 
@@ -130,11 +124,10 @@ section {
     width: 100%;
     height: 170px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    
 }
 
 
-.card-title{
+.card-title {
     font-size: 20px;
     font-weight: bold;
     color: black;
@@ -144,11 +137,13 @@ section {
     align-items: center;
 }
 
-.card-capital , .card-populacao, .card-continente, .card-linguas p {
+.card-capital,
+.card-populacao,
+.card-continente,
+.card-linguas p {
     font-size: 16px;
     color: rgb(8, 8, 8);
     margin: 10px;
-    
 }
 
 .cardp:hover {
@@ -156,7 +151,8 @@ section {
     box-shadow: 8px 8px 12px 8px rgba(0, 0, 0, 0.2);
 }
 
-.cardp:hover .btn-verdetalhes { /* efeito de hover no botão de ver + card (2 ao mesmo tempo) */
+.cardp:hover .btn-verdetalhes {
+    /* efeito de hover no botão de ver + card (2 ao mesmo tempo) */
     background-color: rgb(15, 15, 15);
     color: rgb(247, 244, 244);
 }
@@ -167,18 +163,16 @@ section {
 
 .btn-favoritos {
     background-color: white;
-    color: black; 
-    padding: 5px 15px; 
-    align-items:left; 
-    font-size: 16px; 
-    border: solid 1px rgb(175, 172, 172);  
-   
-    
+    color: black;
+    padding: 5px 15px;
+    align-items: left;
+    font-size: 16px;
+    border: solid 1px rgb(175, 172, 172);
 }
 
 .btn-favoritos:hover {
     background-color: rgb(5, 143, 207);
-    color: white; 
+    color: white;
 }
 
 
@@ -187,53 +181,53 @@ section {
 
 .btn-verdetalhes {
     background-color: white;
-    color: black; 
-    padding: 5px; 
-    align-items:left; 
-    font-size: 16px; 
-    border: solid 1px rgb(175, 172, 172);  
+    color: black;
+    padding: 5px;
+    align-items: left;
+    font-size: 16px;
+    border: solid 1px rgb(175, 172, 172);
     margin: 5px;
-   
-    
 }
 
 .btn-verdetalhes:hover {
     background-color: rgb(143, 145, 146);
-    color: rgb(14, 13, 13); 
+    color: rgb(14, 13, 13);
 }
 
 
 /*---------------------------------------Responsividade---------------------------------------*/
 @media only screen and (max-width: 768px) {
-    #cardfavoritos{
+    #cardfavoritos {
         display: block;
-        width: 90%; /* Define largura para evitar que o card ocupe toda a tela */
-        max-width: 400px; /* Limita o tamanho máximo do card */
-        margin: 10px auto; 
-    }
-    .footer {
-        font-size: 15px;
-        padding: 10px; 
+        width: 90%;
+        /* Define largura para evitar que o card ocupe toda a tela */
+        max-width: 400px;
+        /* Limita o tamanho máximo do card */
+        margin: 10px auto;
     }
 
-    
+    .footer {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #cardfavoritos{
+    #cardfavoritos {
         display: block;
-        width: 90%; 
-        max-width: 400px; 
-        margin: 10px auto; 
-        
+        width: 90%;
+        max-width: 400px;
+        margin: 10px auto;
     }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1398px) {
-    #cardfavoritos{
+    #cardfavoritos {
         display: block;
-        width: 90%; 
-        max-width: 400px; 
-        margin: 10px auto; 
+        width: 90%;
+        max-width: 400px;
+        margin: 10px auto;
     }
 }

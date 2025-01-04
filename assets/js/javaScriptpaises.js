@@ -72,7 +72,7 @@ function adicionarFavoritos(nomePais) {
 }
 
 /* Botão ver mais*/
-   
+
 
 function verdetalhes(nomePais) {
     console.log('Nome do País:', nomePais);  // Verifica se o nome do país foi passado corretamente

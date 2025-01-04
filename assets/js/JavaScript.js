@@ -41,7 +41,7 @@ $(document).ready(function () {
   // Chama a função para carregar os países aleatórios ao carregar a página
   carregarPaises();
 
-  
+
   // Função para redirecionar para a página de detalhes
   function irParaDetalhes(titleId) {
     // Captura o nome do país a partir do texto do título do card
@@ -76,7 +76,7 @@ $(document).ready(function () {
 
 // botao explorar - comercial - redireciona para a página de países
 function explorar() {
-  window.location.href = "paginapaises.html"; 
+  window.location.href = "paginapaises.html";
 }
 
 
@@ -85,17 +85,17 @@ function explorar() {
 
 
 // Quando o botões do carrousel forem clicados
-$(".botaojapao").click(function() {
+$(".botaojapao").click(function () {
   window.location.href = "detalhespaises.html?pais=Japan";
 });
 
 
-$(".botaoaustralia").click(function() {
+$(".botaoaustralia").click(function () {
   window.location.href = "detalhespaises.html?pais=Australia";
 });
 
 
 
-$(".botaoparis").click(function() {
+$(".botaoparis").click(function () {
   window.location.href = "detalhespaises.html?pais=France";
 });

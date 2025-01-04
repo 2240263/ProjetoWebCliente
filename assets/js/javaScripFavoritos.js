@@ -13,7 +13,7 @@ arrayPaisesFavoritos.forEach(pais => {
         method: 'GET',
         url: 'https://restcountries.com/v3.1/name/' + pais
     }).done(function (dados) {
-        
+
         dados.forEach(pais => {
             var languages = [];  // Array para armazenar as línguas do país
 
@@ -69,7 +69,7 @@ function removerFavoritos(nomePais) {
 }
 
 /* Botão ver mais*/
-   
+
 
 function verdetalhes(nomePais) {
     console.log('Nome do País:', nomePais);  // Verifica se o nome do país foi passado corretamente
