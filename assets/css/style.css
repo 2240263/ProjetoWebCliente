@@ -358,7 +358,7 @@ section {
 
 /* Responsividade */
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 478px) {
 
     .texto{
      display:none;
