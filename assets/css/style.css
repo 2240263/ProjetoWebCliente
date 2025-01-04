@@ -368,6 +368,23 @@ section {
         display:none;
     }
 
+    .botaocomercial {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    #comercialbotao {
+        border: 2px solid rgb(13, 13, 14);
+        background-color: white;
+        color: black;
+        padding: 7px 10px;
+        font-size: 10px;
+    }
+    
+   
+
+
+
 } 
 
 @media only screen and (max-width: 668px) {
