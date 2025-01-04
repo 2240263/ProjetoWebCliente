@@ -381,10 +381,6 @@ section {
         font-size: 10px;
     }
     
-   
-
-
-
 } 
 
 @media only screen and (max-width: 668px) {
@@ -442,6 +438,11 @@ section {
 
     .card .botaocomercial {
         margin: 5px;
+    }
+
+    #comercialbotao {
+        padding: 7px 15px;
+        font-size: 10px;
     }
 
     .footer {
@@ -669,6 +670,11 @@ section {
 
     .card .botaocomercial {
         margin: 10px;
+    }
+
+    #comercialbotao {
+        padding: 8px 15px;
+        font-size: 12px;
     }
 
     /* Carrousel */
