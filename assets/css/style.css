@@ -47,7 +47,7 @@ section {
 /*Estrutura do carousel*/
 
 .carousel-caption {
-    top: 60px;
+    top: 80px;
     text-align: left;
 }
 
@@ -67,7 +67,7 @@ section {
     font-size: 16px;
     color: black;
     left: 10px;
-    margin-top: 20px;
+    margin-top: 15px;
 
 
 }
@@ -87,7 +87,7 @@ section {
     font-size: 16px;
     color: white;
     left: 10px;
-    margin-top: 20px;
+    margin-top: 15px;
 
 }
 
@@ -99,7 +99,6 @@ section {
     border: 2px solid rgb(5, 143, 207);
     float: left;
     background-color: transparent;
-
 }
 
 .botaojapao:hover,
@@ -108,7 +107,6 @@ section {
     border: 2px solid rgb(5, 143, 207);
     background-color: rgb(5, 143, 207);
     float: left;
-
 }
 
 .botaoaustralia {
@@ -118,7 +116,6 @@ section {
     color: white;
     float: left;
     border: black;
-
 }
 
 .botaoaustralia:hover {
@@ -132,7 +129,6 @@ section {
 
 .carousel-control-next,
 .carousel-control-prev {
-
     align-items: center;
 }
 
@@ -148,7 +144,6 @@ section {
     padding: 10px;
     width: 100%;
     margin-bottom: 40px;
-
 }
 
 
@@ -383,44 +378,56 @@ section {
         right: 0;
         display: flex;
         padding: 20px;
-      
-      }
-    
-      .carousel-item {
-        flex-direction: column; /* Empilha a imagem e o texto em telas pequenas */
-      }
-      
-      .carousel-item img {
-        width: 100%; /* Imagem ocupa toda a largura em telas pequenas */
-       
-      }
-      
-      .carousel-caption {
-        position: static; /* A posição do texto vai ser normal em telas pequenas */
-      }
-      .carousel-caption h5 {
+
+    }
+
+    .carousel-item {
+        flex-direction: column;
+        /* Empilha a imagem e o texto em telas pequenas */
+    }
+
+    .carousel-item img {
+        width: 100%;
+        /* Imagem ocupa toda a largura em telas pequenas */
+
+    }
+
+    .carousel-caption {
+        position: static;
+        /* A posição do texto vai ser normal em telas pequenas */
+    }
+
+    .carousel-caption h5 {
         font-size: 18px;
         margin-bottom: 10px;
     }
-      
-      .textojapao, .textoaustralia, .textoparis {
-        width: 100%; /* O texto ocupa toda a largura */
-        padding: 10px; /* Espaçamento interno */
 
-       
-      }
-      /*tamanho dos botões */
+    .textojapao,
+    .textoaustralia,
+    .textoparis {
+        width: 100%;
+        /* O texto ocupa toda a largura */
+        padding: 10px;
+        /* Espaçamento interno */
+
+
+    }
+
+    /*tamanho dos botões */
     .carousel-caption button {
         font-size: 10px;
-        padding: 6px 12px; /* Reduz as dimensões dos botões */
-        display: block; /* Garante que o botão seja exibido corretamente */
-        margin: 0 auto; /* Centraliza o botão */
+        padding: 6px 12px;
+        /* Reduz as dimensões dos botões */
+        display: block;
+        /* Garante que o botão seja exibido corretamente */
+        margin: 0 auto;
+        /* Centraliza o botão */
     }
 
-    }
+}
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 650px) {
 
     #logo {
         width: 150px;
@@ -446,9 +453,12 @@ section {
 
     #cardpaises {
         margin: 25px;
-        
+
     }
-    #title2, #title3, #title1 {
+
+    #title2,
+    #title3,
+    #title1 {
         font-size: 12px;
     }
 
@@ -475,52 +485,140 @@ section {
     }
 
     .footer {
-
-        font-size: 15px;
+        font-size: 12px;
     }
-    
-/*Carrousel*/
+    .footer {
+
+        color: black;
+        padding: 10px;
+        background-color: #e7e3e3;
+    }
+   
+
+    /*Carrousel*/
     .carousel-item img {
-        height: auto;/* Garante que a imagem seja redimensionada proporcionalmente */
+        height: auto;
+        /* Garante que a imagem seja redimensionada proporcionalmente */
         max-height: 300px;
         width: 100%;
     }
 
-    .carousel-caption .col-12.col-md-6 {
-        width: 90%; /* Faz o texto ocupar toda a largura em telas pequenas */
-       
-    }
+
     .carousel-caption {
         position: absolute;
         max-width: 100%;
         left: 60px;
         right: 180px;
         padding: 10px;
-       
     }
- /*tamanho do título */
-    .carousel-caption h5 {
-        font-size: 18px;
-        margin-bottom: 20px;
+
+    .carousel-caption .col-12.col-md-6 {
+        width: 100%;
+        /* Faz o texto ocupar toda a largura em telas pequenas */
+
     }
-/*tamanho do parágrafo */
-    .carousel-caption p {
-        font-size: 10px; 
-        text-align: left;
-    }
-/*tamanho dos botões */
+
+    /*tamanho dos botões */
     .carousel-caption button {
-        font-size: 14px;
-        padding: 6px 12px; /* Reduz as dimensões dos botões */
-        display: block; /* Garante que o botão seja exibido corretamente */
-        margin: 0 auto; /* Centraliza o botão */
+        font-size: 10px;
+        padding: 5px 10px;
+        /* Reduz as dimensões dos botões */
+        display: block;
+        /* Garante que o botão seja exibido corretamente */
+        margin: 0px auto;
+        /* Centraliza o botão */
     }
 
+    /* Carrousel */
 
+    /*conteudo japao e Paris*/
+    .textojapao h5,
+    .textoparis h5 {
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+        left: 5px;
+        margin-top: 0px;
 
+    }
+
+    .textojapao p {
+        font-size: 8px;
+        color: black;
+        left: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .textoparis p {
+        font-size: 8px;
+        color: black;
+        left: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    /*conteudo australia */
+
+    .textoaustralia h5 {
+        font-size: 12px;
+        color: white;
+        font-weight: bold;
+        left: 5px;
+    }
+
+    .textoaustralia p {
+        font-size: 8px;
+        color: white;
+        left: 5px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0px;
+    }
+
+    .botaojapao,
+    .botaoparis {
+        padding: 5px 20px;
+        border: 2px solid rgb(5, 143, 207);
+        float: left;
+        background-color: transparent;
+
+    }
+
+    .botaojapao:hover,
+    .botaoparis:hover {
+        padding: 5px 10px;
+        border: 2px solid rgb(5, 143, 207);
+        background-color: rgb(5, 143, 207);
+        float: left;
+
+    }
+
+    .botaoaustralia {
+        padding: 5px 10px;
+        border: 2px solid rgb(255, 251, 251);
+        background-color: black;
+        color: white;
+        float: left;
+        border: black;
+        
+
+    }
+
+    .botaoaustralia:hover {
+        padding: 5px 10px;
+        border: 2px solid rgb(255, 251, 251);
+        background-color: rgb(252, 248, 248);
+        color: rgb(22, 1, 1);
+        float: left;
+        
+    }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 651px) and (max-width: 1200px) {
 
     /* CARDS*/
     .card img.bandeira {
@@ -634,7 +732,7 @@ section {
 
     /* Carrousel */
     .carousel-caption {
-        top: 10px;
+        top: px;
         text-align: left;
     }
 
@@ -644,51 +742,110 @@ section {
         font-size: 15px;
         color: black;
         font-weight: bold;
-        left: 10px;
-
+        margin-left: 20px;
 
     }
 
-    .textojapao p
-    {
+    .textojapao p {
         font-size: 10px;
         color: black;
-        left: 10px;
+        left: 5px;
         margin-top: 10px;
-
-
+        margin-right: 35px;
+        margin-left: 20px;
     }
-    
+
     .textoparis p {
-        font-size: 12px;
+        font-size: 10px;
         color: black;
-        left: 10px;
-        margin-top: 10px;
-
-
+        margin-left: 20px;
     }
 
 
     /*conteudo australia */
 
     .textoaustralia h5 {
-        font-size: 25px;
+        font-size: 15px;
         color: white;
         font-weight: bold;
-        left: 10px;
-
-
+        margin-left: 20px;
     }
 
     .textoaustralia p {
-        font-size: 12px;
+        font-size: 10px;
         color: white;
-        left: 10px;
-        margin-top: 10px;
+        margin-left: 20px;
+        
+    }
 
+    .carousel-item img {
+        height: auto;
+        /* Garante que a imagem seja redimensionada proporcionalmente */
+        max-height: 300px;
+        width: 100%;
+    }
+
+    .carousel-caption .col-12.col-md-6 {
+        width: 90%;
+        /* Faz o texto ocupar toda a largura em telas pequenas */
+
+    }
+
+    .carousel-caption {
+        position: absolute;
+        max-width: 100%;
+        left: 60px;
+        right: 180px;
+        padding: 10px;
+    }
+
+
+    /* botões do carousel - explorar */
+    .botaojapao,
+    .botaoparis {
+        padding: 5px 15px;
+        border: 2px solid rgb(5, 143, 207);
+        float: left;
+        background-color: transparent;
+        margin:15px;
+    }
+
+
+    .botaojapao:hover,
+    .botaoparis:hover {
+        padding: 5px 10px;
+        border: 2px solid rgb(5, 143, 207);
+        background-color: rgb(5, 143, 207);
+        float: left;
+    }
+
+    .botaoaustralia {
+        padding: 5px 10px;
+        border: 2px solid rgb(255, 251, 251);
+        background-color: black;
+        color: white;
+        float: left;
+        border: black;
+        margin:15px;
+    }
+
+    .botaoaustralia:hover {
+        padding: 5px 10px;
+        border: 2px solid rgb(255, 251, 251);
+        background-color: rgb(252, 248, 248);
+        color: rgb(22, 1, 1);
+        float: left;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+    .footer {
+
+        color: black;
+        padding: 10px;
+        background-color: #e7e3e3;
     }
 
 
 }
-
-

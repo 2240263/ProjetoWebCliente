@@ -211,6 +211,10 @@ section {
         max-width: 400px; /* Limita o tamanho máximo do card */
         margin: 10px auto; 
     }
+    .footer {
+        font-size: 15px;
+        padding: 10px; 
+    }
 
     
 }

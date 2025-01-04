@@ -6,7 +6,6 @@
     color: black;
     padding: 20px;
     background-color: #e7e3e3;
-    width: 100%;
     bottom: 0;
     position: relative;
 }
@@ -158,8 +157,8 @@ h1 {
     }
 
     .footer {
-
         font-size: 15px;
+        padding: 10px;
     }
 
     .tabela {
@@ -171,6 +170,7 @@ h1 {
         font-size: 14px;
         /* Reduzir o tamanho da fonte */
     }
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -179,7 +179,9 @@ h1 {
         align-items: center;
     }
     .footer {
-        padding: 15px; /* Reduzir padding do rodapé */
-      }
+        padding: 10px; /* Reduzir padding do rodapé */
+    }
+    
+
 }
 

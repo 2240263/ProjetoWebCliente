@@ -290,5 +290,16 @@ margin-bottom: 20px;
         width: 100%; /* Botão ocupa toda a largura */
         padding: 10px;
     }
+
+    .footer {
+        font-size: 15px;
+    }
+    .footer {
+
+        color: black;
+        padding: 10px;
+        background-color: #e7e3e3;
+    }
+
     
 }
