@@ -358,6 +358,13 @@ section {
 
 /* Responsividade */
 
+@media only screen and (max-width: 350px) {
+
+    .texto{
+     display:none;
+    }
+} 
+
 @media only screen and (max-width: 668px) {
 
     #logo {
@@ -764,6 +771,10 @@ section {
         padding: 10px;
         background-color: #e7e3e3;
     }
+
+
+
+
 
 
 }
