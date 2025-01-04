@@ -363,6 +363,11 @@ section {
     .texto{
      display:none;
     }
+
+    .outrotextocomerical{
+        display:none;
+    }
+
 } 
 
 @media only screen and (max-width: 668px) {
