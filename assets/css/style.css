@@ -58,8 +58,6 @@ section {
     color: black;
     font-weight: bold;
     left: 10px;
-
-
 }
 
 .textojapao p,
@@ -68,8 +66,6 @@ section {
     color: black;
     left: 10px;
     margin-top: 15px;
-
-
 }
 
 /*conteudo australia */
@@ -79,8 +75,6 @@ section {
     color: white;
     font-weight: bold;
     left: 10px;
-
-
 }
 
 .textoaustralia p {
@@ -88,7 +82,6 @@ section {
     color: white;
     left: 10px;
     margin-top: 15px;
-
 }
 
 
@@ -427,7 +420,7 @@ section {
 }
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 668px) {
 
     #logo {
         width: 150px;
@@ -497,9 +490,7 @@ section {
 
     /*Carrousel*/
     .carousel-item img {
-        height: auto;
-        /* Garante que a imagem seja redimensionada proporcionalmente */
-        max-height: 300px;
+        height: 200px;
         width: 100%;
     }
 
@@ -534,7 +525,7 @@ section {
     /*conteudo japao e Paris*/
     .textojapao h5,
     .textoparis h5 {
-        font-size: 12px;
+        font-size: 14px;
         color: black;
         font-weight: bold;
         left: 5px;
@@ -543,7 +534,7 @@ section {
     }
 
     .textojapao p {
-        font-size: 8px;
+        font-size: 10px;
         color: black;
         left: 5px;
         margin-top: 0px;
@@ -551,7 +542,7 @@ section {
     }
 
     .textoparis p {
-        font-size: 8px;
+        font-size: 10px;
         color: black;
         left: 5px;
         margin-top: 0px;
@@ -561,14 +552,14 @@ section {
     /*conteudo australia */
 
     .textoaustralia h5 {
-        font-size: 12px;
+        font-size: 14px;
         color: white;
         font-weight: bold;
         left: 5px;
     }
 
     .textoaustralia p {
-        font-size: 8px;
+        font-size: 10px;
         color: white;
         left: 5px;
         margin-top: 0px;
