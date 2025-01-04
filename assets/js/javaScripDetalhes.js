@@ -33,7 +33,7 @@ $(document).ready(function () {
                     <img src="assets/img/geo-alt.svg" alt="geo" width="30" title="Ver no Google Maps" class="mapsdetalhes">
                 </a>`); // Mapa
                 $('#countrycoordenadas').text("Lat: " + 
-                    (pais[0].capitalInfo.latlng?.[0] ? pais[0].capitalInfo.latlng?.[0]:'N/A' ) 
+                    (pais[0].capitalInfo.latlng?.[0] ? pais[0].capitalInfo.latlng[0]:'N/A' ) 
                     + ", Log: " + 
                     (pais[0].capitalInfo.latlng?.[1]? pais[0].capitalInfo.latlng[1]:'N/A')); // Coordenadas c/validação
                 $('#countrybandeira').html(`<img src="${pais[0].flags.png}" class="card-imga" alt="Bandeira de ${pais[0].name.common}">`); // Bandeira
