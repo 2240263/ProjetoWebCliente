@@ -27,7 +27,7 @@ $('#pesquisarbotao').on('click', function () {
                                             </a>
                                         </div>
                                         <div class="card-body">
-                                            <p class="card-capital"><strong>Capital:</strong> ${pais.capital}</p>
+                                            <p class="card-capital"><strong>Capital:</strong> ${(pais.capital ? pais.capital:'N/A' )}</p>
                                             <p class="card-populacao"><strong>População:</strong> ${pais.population} Habitantes</p>
                                             <p class="card-continente"><strong>Continente:</strong>  ${pais.region}</p>
                                             <p class="card-linguas"><strong>Idiomas:</strong> ${languages.length > 1 ? languages.join(', ') : languages[0]}</p>
